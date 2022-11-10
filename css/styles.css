@@ -1,0 +1,324 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Fuentes importadas
+
+font-family: 'MonteCarlo', cursive;
+font-family: 'Yeseva One', cursive;
+
+*/
+
+/* ------------------ ESTILOS GENERALES ---------------- */
+
+/* estilo de fondo */
+body{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+/* estilos de navbar */
+.navbar{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #222;
+    box-shadow: 0 2px 10px #111a;
+}
+
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.navbar li{
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.navbar img{
+    width: 32px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    filter: drop-shadow(0 0 3px #f00);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #eee;
+}
+
+.navbar a:hover{
+    /* color: #fff; */
+    text-shadow: 0 0 5px #fff;
+}
+
+/* estilo de titulos */
+h1{
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'MonteCarlo', cursive;
+    color: #111;
+    text-shadow: 0 2px 5px #333;
+}
+
+/* estilo de footer */
+
+footer p{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer__home{
+    position: absolute;
+    bottom: 0;
+}
+
+/* estilos de indice */
+
+.indice{
+    position: relative;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff2;
+    text-align: center;
+    width: 350px;
+    font-size: 2em;
+    border-radius: 7px;
+    box-shadow: 0 0 15px #111a;
+    text-shadow: 0 2px 5px #222a;
+}
+
+.indice a{
+    text-decoration: none;
+    color: #111;
+}
+
+.indice ul{
+    list-style: none;
+}
+
+.indice li:hover{
+    background-color: #fff2;
+    border-radius: 10px;
+}
+
+.indice h2{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+
+/* estilos de banner y UP button */
+
+.banner{
+    z-index: 90;
+    position: sticky;
+    top: 48px;
+    width: 100%;
+    padding: 5px;
+    background-color: #222;
+    color: #eee;
+    font-size: 1.6em;
+    font-family: 'Yeseva';
+}
+
+.goUp img{
+    z-index: 95;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+}
+
+.goUp img:hover{
+    filter: drop-shadow(0 0 5px #111);
+    opacity: .8;
+    transition: .2s all;
+}   
+
+/* -------------------------- HOME -------------------------- */
+
+.tituloHome{
+    margin-top: 100px ;
+}
+
+.tituloHome img{
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    right: 100px; 
+    filter: drop-shadow(0 0 15px #111);
+}
+
+.tituloHome h2{
+    font-family: 'MonteCarlo', cursive;
+    position: relative;
+    font-size: 2.3em;
+    text-align: center;
+    text-shadow: 0 2px 3px #444;
+}
+
+/* -------------------------- PERSONAJES -------------------------- */
+
+.personaje{
+    margin-top: 100px;
+}
+
+.info__pj{
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    
+}
+
+.info h2{
+    font-family: 'Yeseva';
+    font-size: 1.7em;
+    text-shadow: 0 2px 5px #111;
+    margin: 25px 15px;
+    
+}
+
+.info p{
+    
+    font-size: 1.6em ;
+    font-family: 'Yeseva';
+    text-shadow: 0 2px 7px #111a;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.personaje img{
+    width: 250px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 35px;
+    right: 250px;
+}
+
+.personaje__img{
+    display: inline-block;
+    position: relative;
+    margin-left: 200px;
+}
+
+/* -------------------------- HISTORIA -------------------------- */
+
+.indice__historia{
+    width: fit-content;
+}
+
+.indice__historia img{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-center{
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.img-center img{
+    width: 1100px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #111;
+}
+
+.info__his{
+    width: 95%;
+    margin-top: 50px;
+}
+
+/* -------------------------- ALQUIMIA -------------------------- */
+
+.alquimia__container{
+    margin-top: 40px;
+    display: block;
+    position: relative;
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 0 1px 3px #111;
+}
+
+.alquimia__table{
+    border-radius: 7px;
+    display: inline-block;
+    margin-left: 50px;
+    /* background-color: #eee3; */
+    /* box-shadow: 0 0 10px #111a; */
+    padding: 20px;
+}
+
+.alquimia__table table{
+    margin: auto;
+}
+
+.alquimia__table th, .alquimia__table td{
+    text-align: left;
+    padding: 5px;
+}
+
+.indice__alquimia{
+    width: 300px;
+    /* margin-top: 60px */
+}
+.info__alquimia p{
+    text-align: left;
+    font-size: 1.9em;
+    padding: 10px;
+    border-radius: 7px;
+    text-shadow: 0 1px 5px #111;
+}
+
+
+.info h3{
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 2em;
+    text-shadow: 0 1px 5px #111;
+}
+
+.info__alquimia span{
+    font-size: .8em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.info__recetas p{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 70px;
+    text-shadow: 0 2px 5px #222;
+}
+
+
+/* -------------------------- BESTIARIO -------------------------- */
+
+.bestiario__galeria{
+    text-align: center;
+}
+
+.bestiario__galeria img{
+    position: relative;
+    margin: 40px auto;
+    display: block;
+    box-shadow: 0 0 10px #111;
+}
