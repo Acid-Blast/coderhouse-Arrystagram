@@ -1,0 +1,180 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Fuentes importadas
+
+font-family: 'MonteCarlo', cursive;
+font-family: 'Yeseva One', cursive;
+
+*/
+
+
+/* ------------------ ESTILOS GENERALES ---------------- */
+
+/* estilo de fondo */
+body{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Yeseva One', cursive;
+}
+
+/* contenedor */
+.grid-container{
+    display: grid;
+    grid-row: auto;
+    grid-column: auto;
+    height: 100vh;
+}
+
+/* estilo de navbar */
+.navbar{
+    text-align: center;
+    font-size: .3rem;
+}
+
+
+/* estilo de titulos */
+h1{
+    margin-top: 4rem;
+    font-family: 'MonteCarlo', cursive;
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    color: #111;
+    text-shadow: 0 2px 5px #111;
+}
+
+/* estilos de links */
+a{
+    text-decoration: none;
+    color: #111;
+}
+a:hover{
+    color: #444;
+}
+
+/* estilo de footer */
+
+footer p{
+    color: #111;
+    display: block;
+    text-align: center;
+}
+
+.footer__home{
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-width:300px){
+    
+    /* ---------------------- GENERALES ---------------------- */
+
+
+
+    /* estilos de navbar */
+   
+    .navbar{
+        font-size: 1.5rem;
+    }
+
+    /* Boton arriba */
+
+    .goUp img{
+        width: 6%;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .goUp img:active{
+        filter: drop-shadow(0 0 5px #111);
+    }
+
+    /* estilos de indice */
+    
+    .indice{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #fff3;
+        text-shadow: 0 1px 4px #111;
+    }
+
+    .indice h2{
+        color: #111;
+        font-size: 2.3rem ;
+    }
+    
+    .indice ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 7px;
+    }
+    
+    .indice ul li{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .indice li a img{
+        width: 2rem;
+        filter: drop-shadow(0 0 4px #111);
+    }
+
+
+    /* ---------------------- HOME ---------------------- */
+    
+    /* estilos de main */
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .tituloHome{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 50%;
+    }
+    
+    main .tituloHome h1{
+        font-weight: bold;
+        text-shadow: 0 2px 7px #000;
+    }
+    
+    main .tituloHome h2{
+        font-family: 'MonteCarlo', cursive;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        color: #111;
+        text-shadow: 0 1px 4px #111;
+        padding: 20px;
+    }
+    
+    main .tituloHome img{
+        width: 50%;
+        filter: drop-shadow(0 0 25px #111);
+    }
+    
+    /* ---------------------- PERSONAJES ---------------------- */
+
+
+    
+}
