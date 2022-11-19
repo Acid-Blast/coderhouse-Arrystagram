@@ -24,329 +24,347 @@
     <title>Arrystagram | Alquimia</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between">
-            <div class="container-fluid justify-content-between align-items-center">
-                <!-- logo -->
-                <a href="#" class="navbar-brand ">
-                    Logo
-                </a>
-                <!-- boton del menu -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- elementos de menu -->
-                <div id="menu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html"> Inicio </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="personajes.html"> Personajes </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="historia.html"> Historia </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="alquimia.html"> Alquimia </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="bestiario.html"> Bestiario </a>
-                        </li>
-                    </ul>
+    <div class="grid-container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between">
+                <div class="container-fluid justify-content-between align-items-center">
+                    <!-- logo -->
+                    <a href="#" class="navbar-brand ">
+                        <img src="../img/logo.png" alt="logo de dungeons and dragons">
+                    </a>
+                    <!-- boton del menu -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- elementos de menu -->
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"> Inicio </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="personajes.html"> Personajes </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="historia.html"> Historia </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="alquimia.html"> Alquimia </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bestiario.html"> Bestiario </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Guia de Alquimia</h1>
+            </nav>
+        </header>
         
-        <div class="goUp">
-            <a href="#"><img src="../img/goup.png" alt=""></a>
-        </div>
-
-        <section class="alquimia__container">
-            <div class="alquimia__table">
-                <h2>Preparación de pociones</h2>
-                <table>
-                    <tr>
-                        <th>Nivel</th>
-                        <th>Tiempo</th>
-                        <th>Costo</th>
-                    </tr>
-                    <tr>
-                        <td>Común</td>
-                        <td>1 Dia</td>
-                        <td>50 Gold</td>
-                    </tr>
-                    <tr>
-                        <td>Poco Común</td>
-                        <td>3 Dias</td>
-                        <td>125 Gold</td>
-                    </tr>
-                    <tr>
-                        <td>Rara</td>
-                        <td>7 Dias</td>
-                        <td>300 Gold</td>
-                    </tr>
-                    <tr>
-                        <td>Muy Raras</td>
-                        <td>15 Dias</td>
-                        <td>600 Gold</td>
-                    </tr>
-                </table>
+        <main>
+            <h1>Guia de Alquimia</h1>
+            
+            <div class="goUp">
+                <a href="#"><img src="../img/goup.png" alt=""></a>
             </div>
-            <div class="alquimia__table">
-                <h2>Recetas por competencia</h2>
-                <table>
-                    <tr>
-                        <th>Poción</th>
-                        <th>Bonús</th>
-                    </tr>
-                    <tr>
-                        <td>Común (3)</td>
-                        <td>+2</td>
-                    </tr>
-                    <tr>
-                        <td>Poco Común</td>
-                        <td>+3,+4</td>
-                    </tr>
-                    <tr>
-                        <td>Rara</td>
-                        <td>+5</td>
-                    </tr>
-                    <tr>
-                        <td>Muy Rara</td>
-                        <td>+6</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
         
-        <div class="indice indice__alquimia">
-            <h2>Pociones</h2>
-            <ul>
-                <li><a href="#p-comun">Común</a></li>
-                <li><a href="#p-pcomun">Poco Común</a></li>
-                <li><a href="#p-rara">Rara</a></li>
-                <li><a href="#p-mrara">Muy Rara</a></li>
-                <li><a href="#p-ingredientes">Ingredientes</a></li>
-            </ul>
-        </div>
-        <section class="info info__recetas">
-            <p>
-                Cuando tu bonus de competencia aumenta podes agregar una nueva receta a tu lista, esta receta debe ser del nivel apropiado o menor, como se indica en la tabla de abajo.
-                El jugador puede aprender la nueva receta sin necesidad de gastar dinero o tiempo.
-            </p>
-        </section>
-
+            <section class="alquimia__container">
+                <div class="alquimia__table">
+                    <h2>Preparación de pociones</h2>
+                    <table>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Tiempo</th>
+                            <th>Costo</th>
+                        </tr>
+                        <tr>
+                            <td>Común</td>
+                            <td>1 Dia</td>
+                            <td>50 Gold</td>
+                        </tr>
+                        <tr>
+                            <td>Poco Común</td>
+                            <td>3 Dias</td>
+                            <td>125 Gold</td>
+                        </tr>
+                        <tr>
+                            <td>Rara</td>
+                            <td>7 Dias</td>
+                            <td>300 Gold</td>
+                        </tr>
+                        <tr>
+                            <td>Muy Raras</td>
+                            <td>15 Dias</td>
+                            <td>600 Gold</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="alquimia__table">
+                    <h2>Recetas por competencia</h2>
+                    <table>
+                        <tr>
+                            <th>Poción</th>
+                            <th>Bonús</th>
+                        </tr>
+                        <tr>
+                            <td>Común (3)</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td>Poco Común</td>
+                            <td>+3,+4</td>
+                        </tr>
+                        <tr>
+                            <td>Rara</td>
+                            <td>+5</td>
+                        </tr>
+                        <tr>
+                            <td>Muy Rara</td>
+                            <td>+6</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
             
-        <section id="p-comun">
-            <div class="banner">
-                <h2>Pociones Comúnes</h2>
+            <div class="indice indice__alquimia">
+                <h2>Pociones</h2>
+                <ul>
+                    <li><a href="#p-comun">Común</a></li>
+                    <li><a href="#p-pcomun">Poco Común</a></li>
+                    <li><a href="#p-rara">Rara</a></li>
+                    <li><a href="#p-mrara">Muy Rara</a></li>
+                    <li><a href="#p-ingredientes">Ingredientes</a></li>
+                </ul>
             </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
+            <section class="info info__recetas">
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    Cuando tu bonus de competencia aumenta podes agregar una nueva receta a tu lista, esta receta debe ser del nivel apropiado o menor, como se indica en la tabla de abajo.
+                    <br>El jugador puede aprender la nueva receta sin necesidad de gastar dinero o tiempo.
                 </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-        </section>
-
-        <section id="p-pcomun">
-            <div class="banner">
-                <h2>Pociones Poco Comunes</h2>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-        </section>
-
-        <section id="p-rara">
-            <div class="banner">
-                <h2>Pociones Raras</h2>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-        </section>
-
-        <section id="p-mrara">
-            <div class="banner">
-                <h2>Pociones Muy Raras</h2>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Poción</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                    <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
-                </p>
-            </div>
-        </section>
-
-        <section id="p-ingredientes">
-            <div class="banner">
-                <h2>Ingredientes</h2>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Ingrediente</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Ingrediente</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Ingrediente</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Ingrediente</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Ingrediente</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                </p>
-            </div>
-            <div class="info info__alquimia">
-                <h3>Nombre de Ingrediente</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
-                    Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
-                </p>
-            </div>
-            
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Arrystagram 1.0.0 - Todos los derechos reservados</p>
-    </footer>
+            </section>
+        
+                
+            <section id="p-comun">
+                <div class="banner">
+                    <h2>Pociones Comúnes</h2>
+                </div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+            </section>
+        
+            <section id="p-pcomun">
+                <div class="banner">
+                    <h2>Pociones Poco Comunes</h2>
+                </div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+            </section>
+        
+            <section id="p-rara">
+                <div class="banner">
+                    <h2>Pociones Raras</h2>
+                </div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+            </section>
+        
+            <section id="p-mrara">
+                <div class="banner">
+                    <h2>Pociones Muy Raras</h2>
+                </div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Poción</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                        <span>Ingredientes: Ingrediente1, Ingrediente2, Ingrediente3</span>
+                    </p>
+                </div>
+            </section>
+        
+            <section id="p-ingredientes">
+                <div class="banner">
+                    <h2>Ingredientes</h2>
+                </div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Ingrediente</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Ingrediente</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Ingrediente</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Ingrediente</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                    </p>
+                </div>
+                <div class="separador"><span></span></div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Ingrediente</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                    </p>
+                </div>
+                <div class="info info__alquimia">
+                    <h3>Nombre de Ingrediente</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt, ipsa asperiores animi vero ducimus nam perspiciatis laboriosam distinctio amet quisquam omnis itaque nostrum, molestias ex quo magnam cumque minima!
+                        Placeat assumenda hic doloribus fugit, tenetur nemo, nequ minima corrupti blanditiis dignissimos officia, magnam voluptatem? Voluptates unde deleniti eum sit hic, rem magnam autem pariatur qui atque quasi ipsa quos.
+                    </p>
+                </div>
+                
+            </section>
+        
+        </main>
+        
+        <footer>
+            <p>Arrystagram 1.0.0 - Todos los derechos reservados</p>
+        </footer>
+    </div>
 </body>
 </html>
