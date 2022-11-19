@@ -108,7 +108,11 @@ footer p{
     .navbar .navbar-brand img{
         width: 2.2rem;
     }
-
+    
+    .navbar-nav .nav-item .active{
+        color: #f00;
+        text-shadow: 0 2px 7px #000;
+    }
     /* Boton arriba */
 
     .goUp img{
