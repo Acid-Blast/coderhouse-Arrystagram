@@ -271,7 +271,7 @@ font-family: 'Yeseva One', cursive;
 
     @keyframes bounce {
         from{
-            transform: scale(1) rotate(-14deg);
+            transform: scale(1);
         }
         to{
             transform: scale(.95);
