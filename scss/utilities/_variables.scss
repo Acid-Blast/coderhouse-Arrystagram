@@ -1,0 +1,23 @@
+// colores
+$font-color-dark: #111;
+$font-color-light: #eee;
+$color-black: #000;
+$color-dark: #1a1a1a;
+$color-red: #f00;
+$color-transparency-light: #fff2;
+$color-transparency-dark: #1112;
+
+// google fonts
+$font-primary: 'MonteCarlo', cursive;
+$font-secondary: 'Yeseva One', cursive;
+
+//maps
+$ingredientes:(ingredientes);
+
+// .info__alquimia{
+//     @each $ingrediente in $ingrediendes{
+//         .#{$ingrediente}{
+//             @include font-italic;
+//         }
+//     }
+// }
