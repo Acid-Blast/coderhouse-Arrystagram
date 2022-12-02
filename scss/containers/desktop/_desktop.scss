@@ -1,6 +1,11 @@
 /*Desktop*/
 @media screen and (min-width:1024px){
-    //imports
+    @import "global-desktop";
+    @import "home-desktop";
+    @import "personajes-desktop";
+    @import "historia-desktop";
+    @import "alquimia-desktop";
+    @import "bestiario-deskto";
 }
 
 //para exportar a style.scss

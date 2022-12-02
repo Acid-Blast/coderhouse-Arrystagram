@@ -1,0 +1,48 @@
+//ESTILOS GLOBALES DESKTOP
+
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+//titulos
+.grid-container{
+    div{
+        h1{
+            font-size: 9rem;
+        }
+    }
+
+    //indice
+    .indice{
+        background-color: unset;
+        width: fit-content;
+        padding: 1rem;
+        text-shadow: 0 1px 4px $color-dark;
+
+        ul{
+            li{
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .goUp{
+        img{
+            width: 2.3rem;
+            transition: all .2s;    
+            
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+
+    //banner
+    .banner{
+        h2{
+            font-size: 1.9rem;
+        }
+    }
+}
+
