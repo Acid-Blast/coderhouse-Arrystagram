@@ -1,0 +1,25 @@
+// PERSONAJES
+/*Personajes*/
+
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+main{
+    .personaje{
+        @include flex-column;
+        gap: 4rem;
+    
+        .info{
+            img{
+                z-index: 50;
+                width: 50%;
+                margin-bottom: 2rem;    
+            }
+        }
+    }
+
+    .indice-pj{
+        margin-bottom: 2rem;
+    }
+}
+

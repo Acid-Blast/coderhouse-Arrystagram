@@ -16,6 +16,7 @@
     align-items: center;
 }
 
+//animaciones
 @mixin animation-bounce {
     animation-name: bounce;
     animation-duration: 1s;
@@ -24,9 +25,17 @@
     animation-direction: alternate-reverse;
 }
 
+
+//letras
 @mixin font-italic {
     display: block;
     font-weight: bold;
     font-style: italic;
     margin-top: 1rem;
+}
+
+//quitar bordes bootstrap
+@mixin no-border {
+    outline: none;
+    box-shadow: none;
 }

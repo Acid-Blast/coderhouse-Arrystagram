@@ -1,0 +1,77 @@
+//ALQUIMIA
+/*Alquimia*/
+
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+main{
+    .indice__alquimia{
+        img{
+            width: 2rem;
+            margin: 7px;
+            filter: drop-shadow(0 0 7px $color-dark);
+    
+        }
+
+        li{
+            text-align: left;
+        }
+    }
+
+    .info__recetas{
+        padding: 5px;
+        margin-left: 0;
+        text-align: center;
+        text-shadow: 0 1px 5px #111;
+    }
+
+    .alquimia__container{
+        @include flex-column;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        gap: 1rem;
+        width: 100%;
+        
+        .alquimia__table{
+            @include flex-column;
+            width: 100%;
+            padding: 5px;
+            background-color: $color-transparency-dark;
+            text-shadow: 0 1px 3px #111d;
+            
+            h2{
+                font-size: 1.8rem;
+            }
+
+            table{
+                font-size: 1.2rem;
+                width: 100%;
+                
+                tr{
+                    &:nth-child(even){
+                        background-color: $color-transparency-light;
+                    }
+
+                    td, th{
+                        padding: 7px;
+                        text-align: center;
+                
+                    }
+                }
+            }
+        }
+    }
+
+    .info__alquimia{
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+        span{
+            @include font-italic;
+
+            img{
+                width: 2rem;
+            }
+        }
+    }
+}
