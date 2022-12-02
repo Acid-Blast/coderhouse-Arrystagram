@@ -1,0 +1,604 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Fuentes importadas
+
+font-family: 'MonteCarlo', cursive;
+font-family: 'Yeseva One', cursive;
+
+*/
+
+/* mobile first */
+@media screen and (min-width:300px){
+
+    /* ------------------ ESTILOS GENERALES ---------------- */
+
+    /* estilo de fondo */
+    body{
+        background-image: url("../img/fondo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        font-family: 'Yeseva One', cursive;
+    }
+
+    /* arreglo de color default de Bootstrap */
+    h1, h2, h3, p, td, th{
+        color: #111;
+    }
+
+    /* ocultar scrollbar */
+    body::-webkit-scrollbar {
+        display: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* contenedor */
+    .grid-container{
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        height: 100vh;
+    }
+
+    /* estilo de navbar */
+    .navbar{
+        text-align: center;
+        font-size: .3rem;
+    }
+
+    .navbar div ul li a:active{
+        text-shadow: 0 0 7px #f00;
+    }
+
+    .navbar-toggler{
+        border:none;
+    }
+
+    .navbar-brand img{
+        filter: drop-shadow(0 0 5px #f00);
+    }
+
+    .navbar-dark{
+        font-size: 1.5rem;
+        background-color: #1a1a1a !important;
+    }
+
+    .navbar .navbar-brand img{
+        width: 2.2rem;
+    }
+
+    .navbar-nav .nav-item .active{
+        color: #f00;
+        text-shadow: 0 2px 7px #000;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:active{
+        transform: scale(.9);
+
+    }
+
+    /* estilo de titulos */
+    .grid-container div h1{
+        margin-top: 4rem;
+        font-family: 'MonteCarlo', cursive;
+        font-size: 6rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 2px 5px #111;
+    }
+
+    /* estilos de links */
+    a{
+        text-decoration: none;
+        color: #111;
+    }
+
+    /* estilos de main */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Boton arriba */
+
+    .goUp img{
+        z-index: 100;
+        width: 6%;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        opacity: .9;
+    }
+
+    .goUp img:active{
+        transform: scale(.9);
+    }
+
+    
+
+    
+    /* estilo de footer */
+
+    footer p{
+        font-size: .6rem;
+        color: #111;
+        display: block;
+        text-align: center;
+    }
+
+    /* estilos de indice */
+
+    .indice{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        padding: 1rem;
+        background-color: #1112;
+        text-shadow: 0 1px 4px #111;
+    }
+
+    .indice h2{
+        font-size: 2.3rem ;
+    }
+
+    .indice ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 7px;
+    }
+
+    .indice ul li{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .indice ul li a:hover{
+        color: #111;
+        opacity: .8;
+    }
+
+    .indice li a img{
+        width: 2rem;
+        filter: drop-shadow(0 0 4px #111) brightness(5%);
+    }
+
+    /* banner */
+
+    .banner{
+        z-index: 90;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        top: 59px;
+        background-color: #1a1a1a;
+        color: #eee;
+        padding: 5px;
+        box-shadow: 0 1px 5px #111;
+    }
+
+    .banner h2{
+        font-size: 1.6rem;
+        text-shadow: 0 1px 4px #fffa;
+        color: #eee;
+    }
+
+    .banner-largo h2{
+        font-size: 1.4rem;
+    }
+
+
+    .banner img{
+        width: 2rem;
+        filter: invert(1);
+        margin: 4px;
+    }
+
+    .banner .nav-link{
+        font-size: 2rem;
+    }
+
+    .banner .dropdown-menu-dark{
+        z-index: 90;
+        background-color: #1a1a1a;
+    }
+
+    .banner .nav-link:focus{
+        color: #f00;
+    }
+
+    .dropdown-item{
+        z-index: 101;
+    }
+
+    /* separador */
+
+    .separador{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .separador span{
+        display: block;
+        margin: 0 auto;
+        height: 1px;
+        width: 50%;
+        background-color: #1a1a1a;
+    }
+
+    /* info cards */
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .info h2{
+        font-size: 2rem;
+        text-shadow: 0 1px 5px #111;
+    }
+
+    .info h3{
+        font-size: 1.8rem;
+        text-shadow: 0 1px 5px #111;
+    }
+
+    .info p{
+        font-size: 1.3rem;
+    }
+
+    .info p::first-letter{
+        font-size: 2em;
+        text-shadow: 0 1px 3px #111;
+    }
+
+    /* ---------------------- HOME ---------------------- */
+
+
+    main .tituloHome{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 50%;
+    }
+
+    main .tituloHome h1{
+        font-weight: bold;
+        text-shadow: 0 2px 7px #000;
+        font-size: 5rem;
+    }
+
+    main .tituloHome h2{
+        font-family: 'MonteCarlo', cursive;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 1px 4px #111;
+        padding: 20px;
+    }
+
+    main .tituloHome img{
+        width: 50%;
+        filter: drop-shadow(0 0 25px #000);
+        animation-name: bounce;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes bounce {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(.95);
+        }
+    }
+
+
+    /* ---------------------- PERSONAJES ---------------------- */
+
+
+    .personaje{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+
+
+    .personaje .info img{
+        z-index: 50;
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .indice-pj{
+        margin-bottom: 2rem;
+    }
+
+    /* ---------------------- HISTORIA ---------------------- */
+
+    .map img{
+        width: 100vw;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .indice__historia li {
+        font-size: .5rem;
+        text-align: left;
+
+    }
+
+    .info__his p{
+        margin-top: 4rem;
+    }
+
+    /* ---------------------- ALQUIMIA ---------------------- */
+
+
+    .indice__alquimia img{
+        width: 2rem;
+        margin: 7px;
+        filter: drop-shadow(0 0 7px #111);
+    }
+
+    .indice__alquimia li{
+        text-align: left;
+    }
+    .alquimia__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        gap: 1rem;
+        width: 100%;
+
+    }
+
+    .alquimia__table{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        background-color: #1112;
+        text-shadow: 0 1px 3px #111d;
+
+    }
+
+    .alquimia__table h2{
+        font-size: 1.8rem;
+    }
+
+    .alquimia__table table {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .alquimia__table table tr:nth-child(even){
+        background-color: #fff2;
+    }
+
+    .alquimia__table table tr td, .alquimia__table table tr th{
+        padding: 7px;
+        text-align: center;
+    }
+
+    .info__recetas{
+        padding: 5px;
+        margin-left: 0;
+        text-align: center;
+        text-shadow: 0 1px 5px #111;
+    }
+
+
+    .info__alquimia{
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .info__alquimia span{
+        display: block;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+
+    .info__alquimia span img{
+        width: 2rem;
+    }
+
+    
+    /* ---------------------- BESTIARIO ---------------------- */
+
+    .carousel-item img{
+
+        object-fit: contain;
+        object-position: center;
+        overflow: hidden;
+        height: 400px;
+    }
+
+    .footer-bestiario{
+        position: relative;
+        margin-top: 6rem;
+   }
+
+}
+
+/* ----------------------------------------------- */
+/* ------------ desktop y tablet ----------------- */
+/* ----------------------------------------------- */
+
+@media screen and (min-width:1024px){
+
+    /* ----------------- GENERALES --------------- */
+
+    /* estilo de titulos */
+    .grid-container div h1{
+        font-size: 9rem;
+    }
+
+     /* estilos de indice */
+
+     .indice{
+        width: fit-content;
+        padding: 1rem;
+        background-color: unset;
+        text-shadow: 0 1px 4px #111;
+    }
+
+    .indice ul li:hover{
+        transform: scale(1.1);
+    }
+
+    /* boton ir arriba */
+    .goUp img{
+        width: 2.3rem;
+        transition: all .2s;
+    }
+
+    .goUp img:hover{
+        opacity: .7;
+    }
+
+    /* banner */
+    .banner h2{
+        font-size: 1.9rem;
+    }
+
+    /* footer */
+    footer p{
+        font-size: 1rem;
+    }
+
+    /* ----------------- HOME --------------- */
+
+    main .tituloHome img{
+        width: 25%;
+        align-self: flex-end;
+        margin: 2rem;
+    }
+
+    /* ----------------- PERSONAJES --------------- */
+
+    .info-pj{
+        display: grid;
+        grid-column: auto;
+        grid-row: auto;
+        grid-template-areas:
+        "h2 h2"
+        "p img";
+        align-items: center;
+        justify-items: center;
+    }
+
+    .info-pj h2{
+        grid-area: h2;
+        justify-self: start;
+        margin-left: 2rem;
+    }
+    .info-pj p{
+        grid-area: p;
+        padding: 2rem;
+    }
+    .personaje .info-pj img{
+        grid-area: img;
+        width: 70%;
+        filter: drop-shadow(0 0 5px #111);
+    }
+
+    /* ----------------- HISTORIA --------------- */
+
+    .map{
+        position: relative;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .map img{
+        width: 100vw;
+        filter: drop-shadow(0 0 15px #000);
+    }
+
+    .info__his p{
+        padding: 3rem;
+    }
+
+    /* ----------------- ALQUIMIA --------------- */
+
+    .indice__alquimia{
+        margin-top: 7rem;
+    }
+
+    .indice__alquimia li{
+        text-align: left;
+    }
+
+    .alquimia__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .alquimia__container .alquimia__table{
+        width: 650px;
+        margin-bottom: 3rem;
+    }
+
+    .info__alquimia{
+        margin-bottom: 120px;
+    }
+
+    .info__alquimia p {
+        width: 60%;
+    }
+
+    /* ----------------- BESTIARIO --------------- */
+
+    .carousel{
+        margin-top: 2rem;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .carousel-inner{
+        filter: drop-shadow(0 0 15px #000);
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    
+}
