@@ -1,0 +1,12 @@
+/*Mobile first*/
+
+@media screen and (min-width:300px) {
+    @import "global-mobile";
+    @import "home-mobile";
+    @import "personajes-mobile";
+    @import "historia-mobile";
+    @import "alquimia-mobile";
+    @import "bestiario-mobile";
+}
+
+//para exportar a style.scss

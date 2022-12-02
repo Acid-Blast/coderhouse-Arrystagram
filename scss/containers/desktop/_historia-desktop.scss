@@ -1,0 +1,22 @@
+//HISTORIA
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+.map{
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    img{
+        width: 100vw;
+        filter: drop-shadow(0 0 15px #000);
+
+    }
+}
+
+.info__his{
+    p{
+        padding: 3rem;
+
+    }
+}

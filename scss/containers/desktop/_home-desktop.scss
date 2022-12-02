@@ -1,0 +1,13 @@
+//HOME
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+main{
+    .tituloHome{
+        img{
+            width: 25%;
+            align-self: flex-end;
+            margin: 2rem;    
+        }
+    }
+}

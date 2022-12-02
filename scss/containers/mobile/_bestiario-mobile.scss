@@ -1,0 +1,23 @@
+//BESTIARIO
+/*Besriario*/
+
+@import "../../utilities/variables";
+
+main{
+    .carousel{
+        .carousel-item{
+            img{
+                object-fit: contain;
+                object-position: center;
+                overflow: hidden;
+                height: 400px;
+        
+            }
+        }
+    }
+}
+
+footer .footer-bestiario{
+    position: relative;
+    margin-top: 6rem;
+}

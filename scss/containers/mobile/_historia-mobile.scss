@@ -1,0 +1,26 @@
+//HISTORIA
+/*Historia*/
+
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+main{
+    .indice__historia{
+        li{
+            font-size: .5rem;
+            text-align: left;    
+        }
+    }
+
+    .info__his{
+        margin-top: 4rem;
+    }
+
+    .map{
+        img{
+            width: 100vw;
+            margin-top: 1rem;
+            margin-bottom: 1rem;    
+        }
+    }
+}
