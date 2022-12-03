@@ -2,28 +2,37 @@
 @import "../../utilities/variables";
 @import "../../utilities/mixin";
 
-.indice__alquimia{
-    margin-top: 7rem;
-
-    li{
-        text-align: left;
+.grid-container{
+    .indice__alquimia{
+        margin-top: 7rem;
+    
+        li{
+            text-align: left;
+        }
     }
-}
 
-.alquimia__container{
-    @include flex-row;
-    gap: 5rem;
-
-    .alquimia__table{
-        width: 650px;
-        margin-bottom: 3rem;
+    .info__recetas{
+        padding: 4rem;
+        font-size: 1.3rem;
     }
-}
-
-.info__alquimia{
-    margin-bottom: 120px;
-
-    p{
-        width: 60%;
+    
+    .alquimia__container{
+        @include flex-row;
+        gap: 5rem;
+    
+        .alquimia__table{
+            width: 650px;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    section{ 
+        .info__alquimia{
+            margin-bottom: 120px;
+        
+            p{
+                width: 60%;
+            }
+        }
     }
 }

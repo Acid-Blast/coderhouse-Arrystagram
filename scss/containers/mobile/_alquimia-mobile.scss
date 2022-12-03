@@ -4,25 +4,22 @@
 @import "../../utilities/variables";
 @import "../../utilities/mixin";
 
-main{
+.grid-container{
     .indice__alquimia{
+        
         img{
             width: 2rem;
             margin: 7px;
             filter: drop-shadow(0 0 7px $color-dark);
     
         }
-
-        li{
-            text-align: left;
-        }
     }
 
     .info__recetas{
+        font-size: 1.2rem;
         padding: 5px;
-        margin-left: 0;
         text-align: center;
-        text-shadow: 0 1px 5px #111;
+        text-shadow: 0 1px 5px $color-dark;
     }
 
     .alquimia__container{
@@ -62,15 +59,18 @@ main{
         }
     }
 
-    .info__alquimia{
-        margin-top: 200px;
-        margin-bottom: 200px;
-
-        span{
-            @include font-italic;
-
-            img{
-                width: 2rem;
+    section{
+        .info__alquimia{
+            font-size: 1.2rem;
+            margin-top: 200px;
+            margin-bottom: 200px;
+    
+            span{
+                @include font-italic;
+    
+                img{
+                    width: 2rem;
+                }
             }
         }
     }

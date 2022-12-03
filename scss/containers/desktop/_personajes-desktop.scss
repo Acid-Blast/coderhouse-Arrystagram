@@ -3,35 +3,39 @@
 @import "../../utilities/mixin";
 
 .grid-container{
-    .info-pj{
-        display: grid;
-        grid-column: auto;
-        grid-row: auto;
-        grid-template-areas:
-        "h2 h2"
-        "p img";
-        align-items: center;
-        justify-items: center;
-
-        h2{
-            grid-area: h2;
-            justify-self: start;
-            margin-left: 2rem;
-    
-        }
-
-        p{
-            grid-area: p;
+    .personaje{
+        .info-pj{
+            display: grid;
+            grid-column: auto;
+            grid-row: auto;
+            grid-template-areas:
+            "h2 h2"
+            "p img";
+            align-items: center;
+            justify-items: center;
             padding: 2rem;
-    
-        }
 
-        img{
-            grid-area: img;
-            width: 70%;
-            filter: drop-shadow(0 0 5px $color-dark);
-    
-        }
+            h2{
+                grid-area: h2;
+                justify-self: start;
+                margin-left: 2rem;
+        
+            }
 
+            p{
+                grid-area: p;
+                font-size: 1.4rem;
+                padding: 2rem;
+        
+            }
+
+            img{
+                grid-area: img;
+                width: 70%;
+                filter: drop-shadow(0 0 5px $color-dark);
+        
+            }
+
+        }
     }
 }

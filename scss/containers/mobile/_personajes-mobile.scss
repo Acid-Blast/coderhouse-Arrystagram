@@ -9,11 +9,15 @@ main{
         @include flex-column;
         gap: 4rem;
     
-        .info{
+        .info-pj{
             img{
                 z-index: 50;
                 width: 50%;
                 margin-bottom: 2rem;    
+            }
+
+            p{
+                font-size: 1.2rem;
             }
         }
     }

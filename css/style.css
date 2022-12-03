@@ -35,13 +35,20 @@
     grid-column: auto;
     height: 100vh;
     /*navbar*/ }
+    .grid-container main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
     .grid-container .navbar {
       text-align: center;
       font-size: .3rem;
       font-size: 1.5rem;
       background-color: #1a1a1a !important; }
-      .grid-container .navbar div ul li a:active {
-        text-shadow: 0 0 7px #f00; }
+      .grid-container .navbar div ul li a {
+        color: #9a9a9a; }
+        .grid-container .navbar div ul li a:hover {
+          text-shadow: 0 0 7px #f00; }
       .grid-container .navbar .navbar-brand img {
         filter: drop-shadow(0 0 5px #f00);
         width: 2.2rem; }
@@ -65,22 +72,17 @@
     .grid-container a {
       text-decoration: none;
       color: #111; }
-    .grid-container main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .grid-container main .goUp img {
-        z-index: 100;
-        width: 6%;
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-        opacity: .9; }
-        .grid-container main .goUp img:active {
-          transform: scale(0.9); }
+    .grid-container .goUp img {
+      z-index: 100;
+      width: 6%;
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      opacity: .9; }
+      .grid-container .goUp img:active {
+        transform: scale(0.9); }
     .grid-container footer p {
-      font-size: .6rem;
+      font-size: .8rem;
       color: #111;
       display: block;
       text-align: center; }
@@ -102,11 +104,10 @@
         align-items: center;
         justify-content: center;
         list-style: none;
-        text-align: center;
         padding: 7px; }
         .grid-container .indice ul li {
           font-size: 1.5rem;
-          margin-bottom: 10px; }
+          margin-bottom: 1rem; }
           .grid-container .indice ul li a:hover {
             color: #111;
             opacity: .8; }
@@ -123,7 +124,8 @@
       background-color: #1a1a1a;
       color: #eee;
       padding: 5px;
-      box-shadow: 0 1px 5px #1a1a1a; }
+      box-shadow: 0 1px 5px #1a1a1a;
+      width: 100%; }
       .grid-container .banner h2 {
         font-size: 1.6rem;
         text-shadow: 0 1px 4px #fff2;
@@ -136,9 +138,11 @@
         z-index: 90;
         background-color: #1a1a1a; }
         .grid-container .banner .dropdown-menu-dark .dropdown-item {
+          color: #eee;
           z-index: 101; }
       .grid-container .banner .nav-link {
-        font-size: 2rem; }
+        font-size: 2rem;
+        color: #eee; }
         .grid-container .banner .nav-link:focus {
           color: #f00; }
     .grid-container .separador {
@@ -155,7 +159,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-left: 1rem; }
+      margin-left: 1rem;
+      padding: 1rem; }
       .grid-container .info h2 {
         font-size: 2rem;
         text-shadow: 0 1px 5px #1a1a1a; }
@@ -200,10 +205,12 @@
     align-items: center;
     justify-content: center;
     gap: 4rem; }
-    main .personaje .info img {
+    main .personaje .info-pj img {
       z-index: 50;
       width: 50%;
       margin-bottom: 2rem; }
+    main .personaje .info-pj p {
+      font-size: 1.2rem; }
   main .indice-pj {
     margin-bottom: 2rem; }
   /*Historia*/
@@ -212,23 +219,23 @@
     text-align: left; }
   main .info__his {
     margin-top: 4rem; }
+    main .info__his p {
+      font-size: 1.2rem; }
   main .map img {
     width: 100vw;
     margin-top: 1rem;
     margin-bottom: 1rem; }
   /*Alquimia*/
-  main .indice__alquimia img {
+  .grid-container .indice__alquimia img {
     width: 2rem;
     margin: 7px;
     filter: drop-shadow(0 0 7px #1a1a1a); }
-  main .indice__alquimia li {
-    text-align: left; }
-  main .info__recetas {
+  .grid-container .info__recetas {
+    font-size: 1.2rem;
     padding: 5px;
-    margin-left: 0;
     text-align: center;
-    text-shadow: 0 1px 5px #111; }
-  main .alquimia__container {
+    text-shadow: 0 1px 5px #1a1a1a; }
+  .grid-container .alquimia__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,7 +244,7 @@
     margin-bottom: 3rem;
     gap: 1rem;
     width: 100%; }
-    main .alquimia__container .alquimia__table {
+    .grid-container .alquimia__container .alquimia__table {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -246,25 +253,26 @@
       padding: 5px;
       background-color: #1112;
       text-shadow: 0 1px 3px #111d; }
-      main .alquimia__container .alquimia__table h2 {
+      .grid-container .alquimia__container .alquimia__table h2 {
         font-size: 1.8rem; }
-      main .alquimia__container .alquimia__table table {
+      .grid-container .alquimia__container .alquimia__table table {
         font-size: 1.2rem;
         width: 100%; }
-        main .alquimia__container .alquimia__table table tr:nth-child(even) {
+        .grid-container .alquimia__container .alquimia__table table tr:nth-child(even) {
           background-color: #fff2; }
-        main .alquimia__container .alquimia__table table tr td, main .alquimia__container .alquimia__table table tr th {
+        .grid-container .alquimia__container .alquimia__table table tr td, .grid-container .alquimia__container .alquimia__table table tr th {
           padding: 7px;
           text-align: center; }
-  main .info__alquimia {
+  .grid-container section .info__alquimia {
+    font-size: 1.2rem;
     margin-top: 200px;
     margin-bottom: 200px; }
-    main .info__alquimia span {
+    .grid-container section .info__alquimia span {
       display: block;
       font-weight: bold;
       font-style: italic;
       margin-top: 1rem; }
-      main .info__alquimia span img {
+      .grid-container section .info__alquimia span img {
         width: 2rem; }
   /*Besriario*/
   main .carousel .carousel-item img {
@@ -278,6 +286,10 @@
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+  .grid-container .navbar .navbar-collapse {
+    justify-content: center; }
+    .grid-container .navbar .navbar-collapse ul .nav-item {
+      margin-right: 2rem; }
   .grid-container div h1 {
     font-size: 9rem; }
   .grid-container .indice {
@@ -288,61 +300,70 @@
     .grid-container .indice ul li:hover {
       transform: scale(1.1); }
   .grid-container .goUp img {
-    width: 2.3rem;
+    width: 2.5rem;
     transition: all .2s; }
     .grid-container .goUp img:hover {
       opacity: .7; }
   .grid-container .banner h2 {
     font-size: 1.9rem; }
+  .grid-container .info {
+    padding: 3rem; }
+  .grid-container footer p {
+    font-size: 1rem; }
   main .tituloHome img {
     width: 25%;
     align-self: flex-end;
     margin: 2rem; }
-  .grid-container .info-pj {
+  .grid-container .personaje .info-pj {
     display: grid;
     grid-column: auto;
     grid-row: auto;
-    grid-template-areas: "h2 h2"
- "p img";
+    grid-template-areas: "h2 h2" "p img";
     align-items: center;
-    justify-items: center; }
-    .grid-container .info-pj h2 {
+    justify-items: center;
+    padding: 2rem; }
+    .grid-container .personaje .info-pj h2 {
       grid-area: h2;
       justify-self: start;
       margin-left: 2rem; }
-    .grid-container .info-pj p {
+    .grid-container .personaje .info-pj p {
       grid-area: p;
+      font-size: 1.4rem;
       padding: 2rem; }
-    .grid-container .info-pj img {
+    .grid-container .personaje .info-pj img {
       grid-area: img;
       width: 70%;
       filter: drop-shadow(0 0 5px #1a1a1a); }
-  .map {
+  main .info__his p {
+    padding: 3rem;
+    font-size: 1.5rem; }
+  main .map {
     position: relative;
     text-align: center;
     margin-bottom: 3rem; }
-    .map img {
+    main .map img {
       width: 100vw;
       filter: drop-shadow(0 0 15px #000); }
-  .info__his p {
-    padding: 3rem; }
-  .indice__alquimia {
+  .grid-container .indice__alquimia {
     margin-top: 7rem; }
-    .indice__alquimia li {
+    .grid-container .indice__alquimia li {
       text-align: left; }
-  .alquimia__container {
+  .grid-container .info__recetas {
+    padding: 4rem;
+    font-size: 1.3rem; }
+  .grid-container .alquimia__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5rem; }
-    .alquimia__container .alquimia__table {
+    .grid-container .alquimia__container .alquimia__table {
       width: 650px;
       margin-bottom: 3rem; }
-  .info__alquimia {
+  .grid-container section .info__alquimia {
     margin-bottom: 120px; }
-    .info__alquimia p {
+    .grid-container section .info__alquimia p {
       width: 60%; }
   .carousel {
     margin-top: 2rem;

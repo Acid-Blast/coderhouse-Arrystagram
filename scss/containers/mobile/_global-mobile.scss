@@ -34,18 +34,29 @@ h1, h2, h3, td, th, p{
     grid-column: auto;
     height: 100vh;
 
+    
+    // /*estilos de main*/
+    main{
+        @include flex-column;    
+    }
+
     /*navbar*/
     .navbar{
+        
         text-align: center;
         font-size: .3rem;
         font-size: 1.5rem;
-        background-color: #1a1a1a !important;
+        background-color: $color-dark !important;
 
         div{
             ul{
                 li{
-                    a:active{
-                        text-shadow: 0 0 7px $color-red;
+                    a{
+                        color: #9a9a9a;
+
+                        &:hover{
+                            text-shadow: 0 0 7px $color-red;
+                        }
                     }
                 }
             }
@@ -104,31 +115,28 @@ h1, h2, h3, td, th, p{
         color: $font-color-dark;
     }
 
-    // /*estilos de main*/
-    main{
-        @include flex-column;
+    .goUp{
+        img{
+            z-index: 100;
+            width: 6%;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            opacity: .9;
 
-        .goUp{
-            img{
-                z-index: 100;
-                width: 6%;
-                position: fixed;
-                bottom: 1rem;
-                right: 1rem;
-                opacity: .9;
-
-                &:active{
-                    transform: scale(.9);
-                }
+            &:active{
+                transform: scale(.9);
             }
         }
     }
+
+
 
     // /*estilos de footer*/
 
     footer{
         p{
-            font-size: .6rem;
+            font-size: .8rem;
             color: $font-color-dark;
             display: block;
             text-align: center;
@@ -151,13 +159,10 @@ h1, h2, h3, td, th, p{
         ul{
             @include flex-column;
             list-style: none;
-            text-align: center;
             padding: 7px;
-
             li{
                 font-size: 1.5rem;
-                margin-bottom: 10px;       
-                
+                margin-bottom: 1rem;                  
                 a{
                     &:hover{
                         color: $font-color-dark;
@@ -187,6 +192,7 @@ h1, h2, h3, td, th, p{
         color: #eee;
         padding: 5px;
         box-shadow: 0 1px 5px $color-dark;
+        width: 100%;
         
         h2{
             font-size: 1.6rem;
@@ -205,13 +211,14 @@ h1, h2, h3, td, th, p{
             background-color: $color-dark;
 
             .dropdown-item{
+                color: $font-color-light;
                 z-index: 101;
             }
         }
 
         .nav-link{
             font-size: 2rem;
-
+            color: $font-color-light;
             &:focus{
                 color: $color-red;
             }
@@ -237,6 +244,7 @@ h1, h2, h3, td, th, p{
     .info{
         @include flex-column;
         margin-left: 1rem;
+        padding: 1rem;
 
         h2{
             font-size: 2rem;

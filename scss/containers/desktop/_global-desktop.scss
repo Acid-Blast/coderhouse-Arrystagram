@@ -5,6 +5,20 @@
 
 //titulos
 .grid-container{
+
+    .navbar{
+
+        .navbar-collapse{
+            justify-content: center;
+            
+            ul{
+                .nav-item{
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
     div{
         h1{
             font-size: 9rem;
@@ -29,7 +43,7 @@
 
     .goUp{
         img{
-            width: 2.3rem;
+            width: 2.5rem;
             transition: all .2s;    
             
             &:hover{
@@ -42,6 +56,16 @@
     .banner{
         h2{
             font-size: 1.9rem;
+        }
+    }
+
+    .info{
+        padding: 3rem;
+    }
+
+    footer{
+        p{
+            font-size: 1rem;
         }
     }
 }
