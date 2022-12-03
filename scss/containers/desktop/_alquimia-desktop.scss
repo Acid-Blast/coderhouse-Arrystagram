@@ -4,12 +4,43 @@
 
 .grid-container{
     .indice__alquimia{
-        // margin-top: 7rem;
+       ul{
+        @include flex-row;
+        margin-bottom: 10rem;
+        margin-top: 4rem;
+        gap: 3rem;
+        li{
+            padding: 2rem;
+            border-radius: 2rem;
+            background-color: $color-transparency-dark;
+            box-shadow: 0 0 10px #1119;
+            width: 250px;
+            &:hover{
+                transition: .3s;
+                box-shadow: 0 0 10px $color-dark,
+                    inset 0 0 10px $color-black;
+
+                img{
+                    filter: drop-shadow(0 0 10px $color-black);
+                }
+            }
+            a{
+                @include flex-column;
+                img{
+                    width: 3rem;
+                }
+            }
+        }
+       }
+
     }
 
     .info__recetas{
         padding: 4rem;
         font-size: 1.3rem;
+        background-color: $color-transparency-dark;
+        width: 100%;
+        margin-bottom: 2rem;
     }
     
     .alquimia__container{
@@ -19,6 +50,8 @@
         .alquimia__table{
             width: 650px;
             margin-bottom: 3rem;
+            box-shadow: 0 0 15px $color-dark;
+            border-radius: 1rem;
         }
     }
     

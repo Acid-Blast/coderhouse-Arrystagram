@@ -103,10 +103,9 @@
             filter: drop-shadow(0 0 2px #000); }
     .grid-container .indice {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       width: 100%;
       margin-top: 3rem;
       padding: 1rem;
@@ -176,7 +175,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-left: 1rem;
       padding: 1rem; }
       .grid-container .info h2 {
         font-size: 2rem;
@@ -387,9 +385,39 @@
     main .map img {
       width: 100vw;
       filter: drop-shadow(0 0 15px #000); }
+  .grid-container .indice__alquimia ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    gap: 3rem; }
+    .grid-container .indice__alquimia ul li {
+      padding: 2rem;
+      border-radius: 2rem;
+      background-color: #1112;
+      box-shadow: 0 0 10px #1119;
+      width: 250px; }
+      .grid-container .indice__alquimia ul li:hover {
+        transition: .3s;
+        box-shadow: 0 0 10px #1a1a1a, inset 0 0 10px #000; }
+        .grid-container .indice__alquimia ul li:hover img {
+          filter: drop-shadow(0 0 10px #000); }
+      .grid-container .indice__alquimia ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .grid-container .indice__alquimia ul li a img {
+          width: 3rem; }
   .grid-container .info__recetas {
     padding: 4rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    background-color: #1112;
+    width: 100%;
+    margin-bottom: 2rem; }
   .grid-container .alquimia__container {
     display: flex;
     flex-wrap: wrap;
@@ -399,7 +427,9 @@
     gap: 5rem; }
     .grid-container .alquimia__container .alquimia__table {
       width: 650px;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      box-shadow: 0 0 15px #1a1a1a;
+      border-radius: 1rem; }
   .grid-container section .info__alquimia {
     margin-bottom: 120px; }
     .grid-container section .info__alquimia p {

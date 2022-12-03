@@ -161,7 +161,7 @@ h1, h2, h3, td, th, p{
 
     //estilos de indice
     .indice{
-        @include flex-row;
+        @include flex-column;
         width: 100%;
         margin-top: 3rem;
         padding: 1rem;
@@ -260,7 +260,6 @@ h1, h2, h3, td, th, p{
 
     .info{
         @include flex-column;
-        margin-left: 1rem;
         padding: 1rem;
 
         h2{
