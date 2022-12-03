@@ -129,11 +129,34 @@ h1, h2, h3, td, th, p{
     // /*estilos de footer*/
 
     footer{
+        @include flex-column;
         p{
+            
             font-size: .8rem;
             color: $font-color-dark;
-            display: block;
             text-align: center;
+        }
+
+        //para actualizar la version del footer más rapido
+        p::after{
+            content: $footer-content;
+        }
+
+        div{
+            @include flex-row;
+            align-items: center;
+            
+            a{
+                align-self: flex-start;
+                margin-left: .6rem;
+                img{
+                    width: 1rem;
+
+                    &:hover{
+                        filter: drop-shadow(0 0 2px $color-black);
+                    }
+                }
+            }
         }
     }
 
@@ -145,6 +168,11 @@ h1, h2, h3, td, th, p{
         padding: 1rem;
         background-color: $color-transparency-dark;
         text-shadow: 0 1px 4px $color-dark;
+
+        a{
+            color: $color-dark;
+            text-decoration: none;
+        }
         
         h2{
             font-size: 2.3rem;

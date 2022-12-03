@@ -69,9 +69,6 @@
       font-weight: bold;
       text-align: center;
       text-shadow: 0 2px 5px #1a1a1a; }
-    .grid-container a {
-      text-decoration: none;
-      color: #111; }
     .grid-container .goUp img {
       z-index: 100;
       width: 6%;
@@ -81,11 +78,31 @@
       opacity: .9; }
       .grid-container .goUp img:active {
         transform: scale(0.9); }
-    .grid-container footer p {
-      font-size: .8rem;
-      color: #111;
-      display: block;
-      text-align: center; }
+    .grid-container footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .grid-container footer p {
+        font-size: .8rem;
+        color: #111;
+        text-align: center; }
+      .grid-container footer p::after {
+        content: "Arrystagram 1.3.2"; }
+      .grid-container footer div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-items: center; }
+        .grid-container footer div a {
+          align-self: flex-start;
+          margin-left: .6rem; }
+          .grid-container footer div a img {
+            width: 1rem; }
+            .grid-container footer div a img:hover {
+              filter: drop-shadow(0 0 2px #000); }
     .grid-container .indice {
       display: flex;
       flex-direction: column;
@@ -96,6 +113,9 @@
       padding: 1rem;
       background-color: #1112;
       text-shadow: 0 1px 4px #1a1a1a; }
+      .grid-container .indice a {
+        color: #1a1a1a;
+        text-decoration: none; }
       .grid-container .indice h2 {
         font-size: 2.3rem; }
       .grid-container .indice ul {
