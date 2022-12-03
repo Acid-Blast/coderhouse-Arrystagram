@@ -52,7 +52,7 @@ h1, h2, h3, td, th, p{
             ul{
                 li{
                     a{
-                        color: #9a9a9a;
+                        color: #bbb;
 
                         &:hover{
                             text-shadow: 0 0 7px $color-red;
@@ -130,25 +130,24 @@ h1, h2, h3, td, th, p{
 
     footer{
         @include flex-column;
-        p{
-            
+        padding-bottom: 2rem;
+        
+        p{            
             font-size: .8rem;
             color: $font-color-dark;
             text-align: center;
         }
 
-        //para actualizar la version del footer más rapido
+        
         p::after{
             content: $footer-content;
         }
 
         div{
             @include flex-row;
-            align-items: center;
+            gap: 1rem;
             
             a{
-                align-self: flex-start;
-                margin-left: .6rem;
                 img{
                     width: 1rem;
 
@@ -162,7 +161,7 @@ h1, h2, h3, td, th, p{
 
     //estilos de indice
     .indice{
-        @include flex-column;
+        @include flex-row;
         width: 100%;
         margin-top: 3rem;
         padding: 1rem;
@@ -187,21 +186,16 @@ h1, h2, h3, td, th, p{
                 font-size: 1.5rem;
                 margin-bottom: 1rem;                  
                 a{
-                    &:hover{
-                        color: $font-color-dark;
-                        opacity: .8;
-                
-                    }
-
                     img{
                         width: 2rem;
-                        filter: drop-shadow(0 0 4px $color-dark) brightness(5%);
+                        filter: drop-shadow(0 0 4px $color-dark) brightness(1%);
                 
                     }
                 }
             }
         }
     }
+
 
     //estilos de banner
     .banner{

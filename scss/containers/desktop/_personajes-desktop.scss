@@ -3,39 +3,76 @@
 @import "../../utilities/mixin";
 
 .grid-container{
-    .personaje{
-        .info-pj{
-            display: grid;
-            grid-column: auto;
-            grid-row: auto;
-            grid-template-areas:
-            "h2 h2"
-            "p img";
-            align-items: center;
-            justify-items: center;
-            padding: 2rem;
 
-            h2{
-                grid-area: h2;
-                justify-self: start;
-                margin-left: 2rem;
-        
+    .indice-pj{
+        margin-bottom: 30vh;
+        margin-top: 7rem;
+
+        ul{
+            @include flex-row;
+            align-items: flex-end;
+            gap: 3rem;
+            li{
+                a{
+                    @include flex-column;
+                    img{
+                        width: 5rem;
+                        transition: .3s;
+
+                        &:hover{
+                            filter: drop-shadow(0 0 15px $color-black);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
             }
-
-            p{
-                grid-area: p;
-                font-size: 1.4rem;
-                padding: 2rem;
-        
-            }
-
-            img{
-                grid-area: img;
-                width: 70%;
-                filter: drop-shadow(0 0 5px $color-dark);
-        
-            }
-
         }
+    }
+
+    .container-personajes{
+
+        .personaje{
+            .info-pj{
+                display: grid;
+                grid-column: auto;
+                grid-row: auto;
+                grid-template-areas:
+                    "h2 h2"
+                    "p img";
+                align-items: center;
+                justify-items: center;
+                padding: 2rem;
+    
+                h2{
+                    grid-area: h2;
+                    justify-self: start;
+                    margin-left: 2rem;
+            
+                }
+    
+                p{
+                    grid-area: p;
+                    font-size: 1.4rem;
+                    padding: 2rem;
+            
+                }
+    
+                img{
+                    grid-area: img;
+                    width: 70%;
+                    filter: drop-shadow(0 0 5px $color-dark);
+            
+                }
+    
+            }
+
+            &:nth-child(even) .info-pj{
+                grid-template-areas:
+                    "h2 h2"
+                    "img p";
+            }
+        }
+
+        
     }
 }

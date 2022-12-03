@@ -46,7 +46,7 @@
       font-size: 1.5rem;
       background-color: #1a1a1a !important; }
       .grid-container .navbar div ul li a {
-        color: #9a9a9a; }
+        color: #bbb; }
         .grid-container .navbar div ul li a:hover {
           text-shadow: 0 0 7px #f00; }
       .grid-container .navbar .navbar-brand img {
@@ -82,7 +82,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      padding-bottom: 2rem; }
       .grid-container footer p {
         font-size: .8rem;
         color: #111;
@@ -95,19 +96,17 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        align-items: center; }
-        .grid-container footer div a {
-          align-self: flex-start;
-          margin-left: .6rem; }
-          .grid-container footer div a img {
-            width: 1rem; }
-            .grid-container footer div a img:hover {
-              filter: drop-shadow(0 0 2px #000); }
+        gap: 1rem; }
+        .grid-container footer div a img {
+          width: 1rem; }
+          .grid-container footer div a img:hover {
+            filter: drop-shadow(0 0 2px #000); }
     .grid-container .indice {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
       justify-content: center;
+      align-items: center;
       width: 100%;
       margin-top: 3rem;
       padding: 1rem;
@@ -129,12 +128,9 @@
         .grid-container .indice ul li {
           font-size: 1.5rem;
           margin-bottom: 1rem; }
-          .grid-container .indice ul li a:hover {
-            color: #111;
-            opacity: .8; }
           .grid-container .indice ul li a img {
             width: 2rem;
-            filter: drop-shadow(0 0 4px #1a1a1a) brightness(5%); }
+            filter: drop-shadow(0 0 4px #1a1a1a) brightness(1%); }
     .grid-container .banner {
       z-index: 90;
       position: sticky;
@@ -263,7 +259,7 @@
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    gap: 1rem;
+    gap: 3rem;
     width: 100%; }
     .grid-container .alquimia__container .alquimia__table {
       display: flex;
@@ -318,8 +314,10 @@
     width: fit-content;
     padding: 1rem;
     text-shadow: 0 1px 4px #1a1a1a; }
-    .grid-container .indice ul li:hover {
-      transform: scale(1.1); }
+    .grid-container .indice ul li {
+      transition: .3s; }
+      .grid-container .indice ul li:hover {
+        transform: scale(1.1); }
   .grid-container .goUp img {
     width: 2.5rem;
     transition: all .2s; }
@@ -335,7 +333,29 @@
     width: 25%;
     align-self: flex-end;
     margin: 2rem; }
-  .grid-container .personaje .info-pj {
+  .grid-container .indice-pj {
+    margin-bottom: 30vh;
+    margin-top: 7rem; }
+    .grid-container .indice-pj ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-items: flex-end;
+      gap: 3rem; }
+      .grid-container .indice-pj ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .grid-container .indice-pj ul li a img {
+          width: 5rem;
+          transition: .3s; }
+          .grid-container .indice-pj ul li a img:hover {
+            filter: drop-shadow(0 0 15px #000);
+            transform: scale(1.1); }
+  .grid-container .container-personajes .personaje .info-pj {
     display: grid;
     grid-column: auto;
     grid-row: auto;
@@ -343,18 +363,20 @@
     align-items: center;
     justify-items: center;
     padding: 2rem; }
-    .grid-container .personaje .info-pj h2 {
+    .grid-container .container-personajes .personaje .info-pj h2 {
       grid-area: h2;
       justify-self: start;
       margin-left: 2rem; }
-    .grid-container .personaje .info-pj p {
+    .grid-container .container-personajes .personaje .info-pj p {
       grid-area: p;
       font-size: 1.4rem;
       padding: 2rem; }
-    .grid-container .personaje .info-pj img {
+    .grid-container .container-personajes .personaje .info-pj img {
       grid-area: img;
       width: 70%;
       filter: drop-shadow(0 0 5px #1a1a1a); }
+  .grid-container .container-personajes .personaje:nth-child(even) .info-pj {
+    grid-template-areas: "h2 h2" "img p"; }
   main .info__his p {
     padding: 3rem;
     font-size: 1.5rem; }
@@ -365,10 +387,6 @@
     main .map img {
       width: 100vw;
       filter: drop-shadow(0 0 15px #000); }
-  .grid-container .indice__alquimia {
-    margin-top: 7rem; }
-    .grid-container .indice__alquimia li {
-      text-align: left; }
   .grid-container .info__recetas {
     padding: 4rem;
     font-size: 1.3rem; }
