@@ -180,6 +180,7 @@ h1, h2, h3, td, th, p{
 
         ul{
             @include flex-column;
+            align-items: flex-start;
             list-style: none;
             padding: 7px;
             li{
@@ -217,7 +218,7 @@ h1, h2, h3, td, th, p{
         width: 100%;
         
         h2{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             text-shadow: 0 1px 4px $color-transparency-light;
             color: $font-color-light;
         }
