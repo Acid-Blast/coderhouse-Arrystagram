@@ -274,7 +274,7 @@ h1, h2, h3, td, th, p{
         
         p{
             color: $font-color-dark;
-            text-shadow: 0 1px 5px $color-dark;
+            text-shadow: 0 1px 5px $font-light-shadow;
 
             &::first-letter{
                 font-size: 2em;            

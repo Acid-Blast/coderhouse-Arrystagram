@@ -184,7 +184,7 @@
         text-shadow: 0 1px 5px #1a1a1a; }
       .grid-container .info p {
         color: #111;
-        text-shadow: 0 1px 5px #1a1a1a; }
+        text-shadow: 0 1px 5px #1116; }
         .grid-container .info p::first-letter {
           font-size: 2em; }
   /*Home*/
@@ -248,8 +248,7 @@
   .grid-container .info__recetas {
     font-size: 1.2rem;
     padding: 5px;
-    text-align: center;
-    text-shadow: 0 1px 5px #1a1a1a; }
+    text-align: center; }
   .grid-container .alquimia__container {
     display: flex;
     flex-direction: column;
