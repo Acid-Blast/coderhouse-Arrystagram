@@ -209,7 +209,7 @@ h1, h2, h3, td, th, p{
         color: #eee;
         padding: 5px;
         box-shadow: 0 1px 5px $color-dark;
-        width: 100%;
+        width: 100vw;
         
         h2{
             font-size: 1.4rem;
@@ -261,6 +261,7 @@ h1, h2, h3, td, th, p{
     .info{
         @include flex-column;
         padding: 1rem;
+        text-align: center;
 
         h2{
             font-size: 2rem;
