@@ -89,7 +89,7 @@
         color: #111;
         text-align: center; }
       .grid-container footer p::after {
-        content: "Arrystagram 1.3.3"; }
+        content: "Arrystagram 1.3.4"; }
       .grid-container footer div {
         display: flex;
         flex-wrap: wrap;
@@ -185,7 +185,8 @@
         text-shadow: 0 1px 5px #1a1a1a; }
       .grid-container .info p {
         color: #111;
-        text-shadow: 0 1px 5px #1116; }
+        text-shadow: 0 1px 5px #1116;
+        white-space: pre-line; }
         .grid-container .info p::first-letter {
           font-size: 2em; }
   /*Home*/
@@ -230,13 +231,17 @@
   main .indice-pj {
     margin-bottom: 2rem; }
   /*Historia*/
-  main .indice__historia li {
-    font-size: .5rem;
-    text-align: left; }
+  main .indice__historia h2 {
+    margin-bottom: 2rem; }
+  main .indice__historia ul li a {
+    font-size: 1.3rem; }
+    main .indice__historia ul li a img {
+      width: 5rem; }
   main .info__his {
     margin-top: 4rem; }
     main .info__his p {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-align: left; }
   main .map img {
     width: 100vw;
     margin-top: 1rem;
@@ -326,7 +331,7 @@
   .grid-container .info {
     padding: 3rem; }
     .grid-container .info p {
-      font-size: 1.4rem; }
+      font-size: 1.5rem; }
   .grid-container footer p {
     font-size: 1rem; }
   main .tituloHome img {
@@ -376,6 +381,8 @@
       filter: drop-shadow(0 0 5px #1a1a1a); }
   .grid-container .container-personajes .personaje:nth-child(even) .info-pj {
     grid-template-areas: "h2 h2" "img p"; }
+  main .indice__historia li a {
+    font-size: 1.5rem; }
   main .info__his p {
     padding: 3rem;
     font-size: 1.5rem; }

@@ -6,9 +6,21 @@
 
 main{
     .indice__historia{
-        li{
-            font-size: .5rem;
-            text-align: left;    
+
+        h2{
+            margin-bottom: 2rem;
+        }
+
+        ul{
+            li{
+                a{
+                    font-size: 1.3rem;
+    
+                    img{
+                        width: 5rem;
+                    }
+                }  
+            }
         }
     }
 
@@ -17,6 +29,8 @@ main{
 
         p{
             font-size: 1.2rem;
+            text-align: left;
+            
         }
     }
 

@@ -3,6 +3,14 @@
 @import "../../utilities/mixin";
 
 main{
+    .indice__historia{
+        li{
+            a{
+                font-size: 1.5rem;
+            }  
+        }
+    }
+
     .info__his{
         p{
             padding: 3rem;
