@@ -11,14 +11,13 @@
         gap: 3rem;
         li{
             padding: 2rem;
-            border-radius: 2rem;
+            // border-radius: 1rem;
             background-color: $color-transparency-dark;
             box-shadow: 0 0 10px #1119;
             width: 250px;
             &:hover{
                 transition: .3s;
-                box-shadow: 0 0 10px $color-dark,
-                    inset 0 0 10px $color-black;
+                box-shadow: 0 0 10px $color-dark,;
 
                 img{
                     filter: drop-shadow(0 0 10px $color-black);
@@ -38,7 +37,6 @@
     .info__recetas{
         padding: 4rem;
         font-size: 1.3rem;
-        background-color: $color-transparency-dark;
         width: 100%;
         margin-bottom: 2rem;
     }
@@ -51,14 +49,15 @@
             width: 650px;
             margin-bottom: 3rem;
             box-shadow: 0 0 15px $color-dark;
-            border-radius: 1rem;
+            // border-radius: 1rem;
         }
     }
     
     section{ 
         .info__alquimia{
+            background-color: $color-transparency-light;
             margin-bottom: 120px;
-        
+
             p{
                 width: 60%;
             }

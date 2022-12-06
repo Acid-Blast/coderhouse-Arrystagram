@@ -32,6 +32,17 @@ main{
             text-align: left;
             
         }
+
+        a{
+            color: $font-color-dark;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        a:hover{
+            text-shadow: 0 1px 5px $color-dark;
+            text-decoration: none;
+        }
     }
 
     .map{

@@ -34,7 +34,7 @@
 
         ul{
             li{
-                transition: .3s;
+                transition: .2s;
                 &:hover{
                     transform: scale(1.1);
                 }
@@ -49,13 +49,22 @@
             transition: all .2s;    
             
             &:hover{
-                opacity: .7;
+                transform: scale(1.1);
+            }
+
+            &:active{
+                opacity: .6;
             }
         }
     }
 
     //banner
     .banner{
+
+        img{
+            width: 2rem;
+        }
+
         h2{
             font-size: 1.9rem;
         }
@@ -63,7 +72,7 @@
 
     .info{
         padding: 3rem;
-
+        margin-bottom: 4rem;        
         p{
             font-size: 1.5rem;
         }
