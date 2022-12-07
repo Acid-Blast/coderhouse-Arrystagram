@@ -3,12 +3,26 @@
 @import "../../utilities/variables";
 @import "../../utilities/mixin";
 
-body{
-    background-image: url("../img/fondo.jpg");
+.background{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background-image: url('../../../img/fondo.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    // background-position: 50% 10%; 
+}
+
+body{
+    // background-image: url("../img/fondo.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center;
     height: 100vh;
     width: 100%;
     font-family: $font-secondary;
@@ -33,7 +47,7 @@ h1, h2, h3, td, th, p{
     grid-row: auto;
     grid-column: auto;
     height: 100vh;
-    
+    z-index: 1;
     // /*estilos de main*/
     main{
         @include flex-column;    

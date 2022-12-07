@@ -38,7 +38,7 @@ main {
         grid-template-rows: 1fr 1fr;        
         gap: 2rem;
         width: max-content;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: 2rem;
         .quick-access__item{
             padding: 1rem;
@@ -51,9 +51,10 @@ main {
                 font-size: 1.2rem;
                 color: $font-color-dark;
                 text-shadow: 0 1px 4px $color-dark;
+                gap: 7px;
                 img{
                     filter: grayscale(1) brightness(0%) drop-shadow(0 0 10px $color-dark);
-                    width: 4rem;
+                    width: 3rem;
                 }
             }
             
