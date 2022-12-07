@@ -46,10 +46,12 @@
       font-size: .3rem;
       font-size: 1.5rem;
       background-color: #1a1a1a !important; }
-      .grid-container .navbar div ul li a {
+      .grid-container .navbar .navbar-collapse ul li a {
         color: #bbb; }
-        .grid-container .navbar div ul li a:hover {
+        .grid-container .navbar .navbar-collapse ul li a:hover {
           text-shadow: 0 0 7px #f00; }
+      .grid-container .navbar .navbar-collapse ul li #about-img {
+        display: none; }
       .grid-container .navbar .navbar-brand img {
         filter: drop-shadow(0 0 4px #f00);
         width: 2.2rem; }
@@ -79,8 +81,7 @@
       opacity: .9;
       filter: drop-shadow(0 0 5px #111); }
       .grid-container .goUp img:active {
-        transform: scale(0.9);
-        transition: 0s; }
+        transform: scale(0.9); }
     .grid-container footer {
       display: flex;
       flex-direction: column;
@@ -101,11 +102,11 @@
         align-items: center;
         gap: 1rem; }
         .grid-container footer div a img {
-          width: 1rem; }
+          width: 20px; }
           .grid-container footer div a img:hover {
             filter: drop-shadow(0 0 2px #000);
             transform: scale(1.3);
-            transition: .1s; }
+            transition: .2s; }
     .grid-container .indice {
       display: flex;
       flex-direction: column;
@@ -266,7 +267,7 @@
     gap: 4rem; }
     .grid-container main .personaje .info-pj img {
       z-index: 50;
-      width: 50%;
+      width: 40%;
       margin-bottom: 2rem; }
     .grid-container main .personaje .info-pj p {
       font-size: 1.2rem; }
@@ -359,8 +360,18 @@
 @media screen and (min-width: 1024px) {
   .grid-container .navbar .navbar-collapse {
     justify-content: center; }
-    .grid-container .navbar .navbar-collapse ul .nav-item {
-      margin-right: 2rem; }
+    .grid-container .navbar .navbar-collapse ul {
+      gap: 2rem; }
+      .grid-container .navbar .navbar-collapse ul li #about-text {
+        display: none; }
+      .grid-container .navbar .navbar-collapse ul li #about-img {
+        display: inherit;
+        align-self: center; }
+        .grid-container .navbar .navbar-collapse ul li #about-img img {
+          filter: invert(1);
+          width: 27px; }
+          .grid-container .navbar .navbar-collapse ul li #about-img img:hover {
+            filter: invert(1) drop-shadow(0 0 3px #f00); }
   .grid-container div h1 {
     font-size: 9rem; }
   .grid-container .indice {
@@ -369,16 +380,15 @@
     padding: 1rem;
     text-shadow: 0 1px 4px #1a1a1a; }
     .grid-container .indice ul li {
-      transition: .2s; }
+      transition: all .1s; }
       .grid-container .indice ul li:hover {
         transform: scale(1.1); }
   .grid-container .goUp img {
-    width: 2.5rem;
-    transition: all .2s; }
+    width: 2.5rem; }
     .grid-container .goUp img:hover {
       transform: scale(1.1); }
     .grid-container .goUp img:active {
-      opacity: .6; }
+      transform: scale(1); }
   .grid-container .banner img {
     width: 2rem; }
   .grid-container .banner h2 {
@@ -392,7 +402,7 @@
     font-size: 1rem; }
   main .tituloHome img {
     display: inherit;
-    width: 25%;
+    width: 20%;
     align-self: flex-end;
     margin: 2rem; }
   main .quick-access {
@@ -412,13 +422,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        gap: 2rem; }
         .grid-container main .indice-pj ul li a img {
-          width: 5rem;
-          transition: .3s; }
+          width: 7rem;
+          transition: all .1s; }
           .grid-container main .indice-pj ul li a img:hover {
-            filter: drop-shadow(0 0 15px #000);
+            filter: drop-shadow(0 0 10px #1a1a1a);
             transform: scale(1.1); }
+        .grid-container main .indice-pj ul li a .agrandar-imagen {
+          width: 8rem; }
   .grid-container main .container-personajes .personaje .info-pj {
     display: grid;
     grid-column: auto;

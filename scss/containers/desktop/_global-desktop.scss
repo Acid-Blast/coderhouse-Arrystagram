@@ -12,8 +12,26 @@
             justify-content: center;
             
             ul{
-                .nav-item{
-                    margin-right: 2rem;
+                gap: 2rem;
+
+                li{
+                    #about-text{
+                        display: none;
+                    }
+
+                    #about-img{
+                        display: inherit;
+                        align-self: center;
+
+                        img{
+                            filter: invert(1);
+                            width: 27px;
+                            
+                            &:hover{
+                                filter:  invert(1) drop-shadow(0 0 3px $color-red);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -34,7 +52,7 @@
 
         ul{
             li{
-                transition: .2s;
+                transition: all .1s;
                 &:hover{
                     transform: scale(1.1);
                 }
@@ -46,14 +64,13 @@
     .goUp{
         img{
             width: 2.5rem;
-            transition: all .2s;    
             
             &:hover{
                 transform: scale(1.1);
             }
 
             &:active{
-                opacity: .6;
+                transform: scale(1);
             }
         }
     }

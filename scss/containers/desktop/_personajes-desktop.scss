@@ -16,14 +16,19 @@ main{
             li{
                 a{
                     @include flex-column;
+                    gap: 2rem;
                     img{
-                        width: 5rem;
-                        transition: .3s;
+                        width: 7rem;
+                        transition: all .1s;
 
                         &:hover{
-                            filter: drop-shadow(0 0 15px $color-black);
+                            filter: drop-shadow(0 0 10px $color-dark);
                             transform: scale(1.1);
                         }
+                    }
+
+                    .agrandar-imagen{
+                        width: 8rem;
                     }
                 }
             }
