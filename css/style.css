@@ -260,6 +260,8 @@
       main .quick-access .quick-access__item:active > a {
         transform: scale(0.9); }
   /*Personajes*/
+  .grid-container main .indice-pj {
+    margin-bottom: 6rem; }
   .grid-container main .banner img {
     filter: grayscale(1) invert(1) brightness(100%); }
   .grid-container main .personaje {
@@ -274,8 +276,6 @@
       margin-bottom: 2rem; }
     .grid-container main .personaje .info-pj p {
       font-size: 1.2rem; }
-  .grid-container main .indice-pj {
-    margin-bottom: 2rem; }
   /*Historia*/
   main .indice__historia h2 {
     margin-bottom: 2rem; }
@@ -403,10 +403,10 @@
     margin: 2rem; }
   main .quick-access {
     display: none; }
-  .grid-container .indice-pj {
+  .grid-container main .indice-pj {
     margin-bottom: 30vh;
     margin-top: 7rem; }
-    .grid-container .indice-pj ul {
+    .grid-container main .indice-pj ul {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -414,18 +414,18 @@
       align-items: center;
       align-items: flex-end;
       gap: 3rem; }
-      .grid-container .indice-pj ul li a {
+      .grid-container main .indice-pj ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center; }
-        .grid-container .indice-pj ul li a img {
+        .grid-container main .indice-pj ul li a img {
           width: 5rem;
           transition: .3s; }
-          .grid-container .indice-pj ul li a img:hover {
+          .grid-container main .indice-pj ul li a img:hover {
             filter: drop-shadow(0 0 15px #000);
             transform: scale(1.1); }
-  .grid-container .container-personajes .personaje .info-pj {
+  .grid-container main .container-personajes .personaje .info-pj {
     display: grid;
     grid-column: auto;
     grid-row: auto;
@@ -433,18 +433,18 @@
     align-items: center;
     justify-items: center;
     padding: 2rem; }
-    .grid-container .container-personajes .personaje .info-pj h2 {
+    .grid-container main .container-personajes .personaje .info-pj h2 {
       grid-area: h2;
       justify-self: start; }
-    .grid-container .container-personajes .personaje .info-pj p {
+    .grid-container main .container-personajes .personaje .info-pj p {
       grid-area: p;
       font-size: 1.4rem;
       padding: 2rem; }
-    .grid-container .container-personajes .personaje .info-pj img {
+    .grid-container main .container-personajes .personaje .info-pj img {
       grid-area: img;
       width: 70%;
       filter: drop-shadow(0 0 5px #1a1a1a); }
-  .grid-container .container-personajes .personaje:nth-child(even) .info-pj {
+  .grid-container main .container-personajes .personaje:nth-child(even) .info-pj {
     grid-template-areas: "h2 h2" "img p"; }
   main .indice__historia li a {
     font-size: 1.5rem; }
@@ -468,7 +468,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10rem;
     margin-top: 4rem;
     gap: 3rem; }
     .grid-container .indice__alquimia ul li {

@@ -6,7 +6,6 @@
     .indice__alquimia{
        ul{
         @include flex-row;
-        margin-bottom: 10rem;
         margin-top: 4rem;
         gap: 3rem;
         li{

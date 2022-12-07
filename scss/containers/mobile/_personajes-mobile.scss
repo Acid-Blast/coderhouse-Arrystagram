@@ -6,6 +6,11 @@
 
 .grid-container{
     main{
+
+        .indice-pj{
+            margin-bottom: 6rem;
+        }
+
         .banner{
             img{
                 filter: grayscale(1) invert(1) brightness(100%);
@@ -29,9 +34,7 @@
             }
         }
     
-        .indice-pj{
-            margin-bottom: 2rem;
-        }
+       
     }
 }
 
