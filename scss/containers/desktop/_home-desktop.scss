@@ -5,9 +5,14 @@
 main{
     .tituloHome{
         img{
+            display: inherit;
             width: 25%;
             align-self: flex-end;
             margin: 2rem;    
         }
+    }
+
+    .quick-access{
+        display: none;
     }
 }

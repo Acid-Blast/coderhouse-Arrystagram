@@ -48,10 +48,18 @@
                         background-color: $color-transparency-light;
                     }
 
-                    td, th{
+                    td{
                         padding: 7px;
                         text-align: center;
-                
+                        img{
+                            width: 20px;
+                            margin-left: 6px;
+                            filter: drop-shadow(0 0 5px $color-dark);
+                        }
+                    }
+
+                    th{
+                        @extend td;
                     }
                 }
             }

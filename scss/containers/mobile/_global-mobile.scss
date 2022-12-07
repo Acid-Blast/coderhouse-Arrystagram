@@ -33,7 +33,6 @@ h1, h2, h3, td, th, p{
     grid-row: auto;
     grid-column: auto;
     height: 100vh;
-
     
     // /*estilos de main*/
     main{
@@ -192,7 +191,7 @@ h1, h2, h3, td, th, p{
                 a{
                     img{
                         width: 2rem;
-                        filter: drop-shadow(0 0 4px $color-dark) brightness(1%);
+                        filter: drop-shadow(0 0 4px $color-dark) brightness(0%);
                 
                     }
                 }
@@ -224,6 +223,7 @@ h1, h2, h3, td, th, p{
         img{
             width: 1.4rem;
             filter: invert(1);
+            
             margin: 4px;        
         }
 

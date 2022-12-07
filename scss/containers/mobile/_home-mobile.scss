@@ -6,6 +6,7 @@
 
 main {
     .tituloHome{
+        padding: 1rem;
         @include flex-column;
         gap: 50%;
 
@@ -25,9 +26,45 @@ main {
         }
 
         img{
-            width: 50%;
+            display: none;
+            width: 30%;
             filter: drop-shadow(0 0 25px #000);
             @include animation-bounce;   
+        }
+    }
+
+    .quick-access{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;        
+        gap: 4rem;
+        margin: 3rem;
+        width: max-content;
+        .quick-access__item{
+            padding: 1rem;
+            background-color: $color-transparency-dark;
+            box-shadow: 0 0 15px $color-black;
+            border-radius: 1rem;
+            a{
+                @include flex-column;
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $font-color-dark;
+                gap: 1rem;
+                text-shadow: 0 1px 4px $color-dark;
+                img{
+                    filter: grayscale(1) brightness(0%) drop-shadow(0 0 10px $color-dark);
+                    width: 4rem;
+                }
+            }
+            
+            &:hover{
+                box-shadow: inset 0 0 10px $color-black, 0 0 15px $color-black;
+            }
+
+            &:active > a{
+                transform: scale(.9);
+            }
         }
     }
 }

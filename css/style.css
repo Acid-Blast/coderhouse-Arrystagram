@@ -27,7 +27,7 @@
       -ms-overflow-style: none;
       scrollbar-width: none; }
   /* arreglo de color default de Bootstrap */
-  h1, h2, h3, td, th, p {
+  h1, h2, h3, td, .grid-container .alquimia__container .alquimia__table table tr th, th, p {
     color: #111; }
   .grid-container {
     display: grid;
@@ -91,7 +91,7 @@
         color: #111;
         text-align: center; }
       .grid-container footer p::after {
-        content: "2022 - Arrystagram 1.3.6"; }
+        content: "2022 - Arrystagram 1.3.7"; }
       .grid-container footer div {
         display: flex;
         flex-wrap: wrap;
@@ -133,7 +133,7 @@
           margin-bottom: 1rem; }
           .grid-container .indice ul li a img {
             width: 2rem;
-            filter: drop-shadow(0 0 4px #1a1a1a) brightness(1%); }
+            filter: drop-shadow(0 0 4px #1a1a1a) brightness(0%); }
     .grid-container .banner {
       z-index: 90;
       position: sticky;
@@ -197,6 +197,7 @@
           font-size: 2em; }
   /*Home*/
   main .tituloHome {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,27 +215,59 @@
       text-shadow: 0 1px 4px #1112;
       padding: 20px; }
     main .tituloHome img {
-      width: 50%;
+      display: none;
+      width: 30%;
       filter: drop-shadow(0 0 25px #000);
       animation-name: bounce;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse; }
+  main .quick-access {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+    margin: 3rem;
+    width: max-content; }
+    main .quick-access .quick-access__item {
+      padding: 1rem;
+      background-color: #1112;
+      box-shadow: 0 0 15px #000;
+      border-radius: 1rem; }
+      main .quick-access .quick-access__item a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #111;
+        gap: 1rem;
+        text-shadow: 0 1px 4px #1a1a1a; }
+        main .quick-access .quick-access__item a img {
+          filter: grayscale(1) brightness(0%) drop-shadow(0 0 10px #1a1a1a);
+          width: 4rem; }
+      main .quick-access .quick-access__item:hover {
+        box-shadow: inset 0 0 10px #000, 0 0 15px #000; }
+      main .quick-access .quick-access__item:active > a {
+        transform: scale(0.9); }
   /*Personajes*/
-  main .personaje {
+  .grid-container main .banner img {
+    filter: grayscale(1) invert(1) brightness(100%); }
+  .grid-container main .personaje {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4rem; }
-    main .personaje .info-pj img {
+    .grid-container main .personaje .info-pj img {
       z-index: 50;
       width: 50%;
       margin-bottom: 2rem; }
-    main .personaje .info-pj p {
+    .grid-container main .personaje .info-pj p {
       font-size: 1.2rem; }
-  main .indice-pj {
+  .grid-container main .indice-pj {
     margin-bottom: 2rem; }
   /*Historia*/
   main .indice__historia h2 {
@@ -296,6 +329,10 @@
         .grid-container .alquimia__container .alquimia__table table tr td, .grid-container .alquimia__container .alquimia__table table tr th {
           padding: 7px;
           text-align: center; }
+          .grid-container .alquimia__container .alquimia__table table tr td img, .grid-container .alquimia__container .alquimia__table table tr th img {
+            width: 20px;
+            margin-left: 6px;
+            filter: drop-shadow(0 0 5px #1a1a1a); }
   .grid-container section .info__alquimia {
     font-size: 1.2rem;
     margin-top: 200px;
@@ -353,9 +390,12 @@
   .grid-container footer p {
     font-size: 1rem; }
   main .tituloHome img {
+    display: inherit;
     width: 25%;
     align-self: flex-end;
     margin: 2rem; }
+  main .quick-access {
+    display: none; }
   .grid-container .indice-pj {
     margin-bottom: 30vh;
     margin-top: 7rem; }
