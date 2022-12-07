@@ -6,7 +6,6 @@
 
 main {
     .tituloHome{
-        padding: 1rem;
         @include flex-column;
         gap: 50%;
 
@@ -37,9 +36,10 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;        
-        gap: 4rem;
-        margin: 3rem;
+        gap: 2rem;
         width: max-content;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         .quick-access__item{
             padding: 1rem;
             background-color: $color-transparency-dark;
@@ -50,7 +50,6 @@ main {
                 text-decoration: none;
                 font-size: 1.2rem;
                 color: $font-color-dark;
-                gap: 1rem;
                 text-shadow: 0 1px 4px $color-dark;
                 img{
                     filter: grayscale(1) brightness(0%) drop-shadow(0 0 10px $color-dark);
