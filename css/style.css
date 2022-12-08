@@ -357,7 +357,7 @@
     margin-top: 6rem; } }
 
 /*Desktop*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .grid-container .navbar .navbar-collapse {
     justify-content: center; }
     .grid-container .navbar .navbar-collapse ul {
@@ -369,7 +369,8 @@
         align-self: center; }
         .grid-container .navbar .navbar-collapse ul li #about-img img {
           filter: invert(1);
-          width: 27px; }
+          width: 27px;
+          opacity: .6; }
           .grid-container .navbar .navbar-collapse ul li #about-img img:hover {
             filter: invert(1) drop-shadow(0 0 3px #f00); }
   .grid-container div h1 {

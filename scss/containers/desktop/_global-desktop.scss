@@ -26,7 +26,8 @@
                         img{
                             filter: invert(1);
                             width: 27px;
-                            
+                            opacity: .6;
+
                             &:hover{
                                 filter:  invert(1) drop-shadow(0 0 3px $color-red);
                             }
