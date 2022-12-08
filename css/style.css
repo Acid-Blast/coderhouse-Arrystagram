@@ -354,7 +354,38 @@
     height: 400px; }
   footer .footer-bestiario {
     position: relative;
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+  .grid-container main h1 {
+    font-size: 3rem; }
+  .grid-container main section .contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff2;
+    margin-bottom: 3rem;
+    width: 100vw;
+    gap: 1rem; }
+    .grid-container main section .contacto form input, .grid-container main section .contacto form textarea {
+      width: 70%;
+      height: 35px;
+      background-color: #1a1a1a;
+      color: #eee;
+      font-size: 1rem; }
+      .grid-container main section .contacto form input:focus, .grid-container main section .contacto form textarea:focus {
+        box-shadow: 0 3px 10px #000;
+        border: none; }
+    .grid-container main section .contacto form textarea {
+      resize: none;
+      height: 100px; }
+      .grid-container main section .contacto form textarea::-webkit-scrollbar {
+        width: 7px; }
+      .grid-container main section .contacto form textarea::-webkit-scrollbar-track {
+        background: #1a1a1a;
+        border-radius: 1rem; }
+      .grid-container main section .contacto form textarea::-webkit-scrollbar-thumb {
+        background: #eee;
+        border-radius: 1rem; } }
 
 /*Desktop*/
 @media screen and (min-width: 1000px) {
@@ -517,10 +548,13 @@
     .grid-container section .info__alquimia p {
       width: 60%; }
   .carousel {
-    margin-top: 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
     gap: 5rem; }
-  .carousel-inner {
-    filter: drop-shadow(0 0 15px #000);
-    margin-left: 10rem;
-    margin-right: 10rem; } }
+    .carousel .carousel-inner {
+      filter: drop-shadow(0 0 15px #000);
+      margin-left: 10rem;
+      margin-right: 10rem; } }

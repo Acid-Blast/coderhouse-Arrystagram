@@ -1,1 +1,58 @@
 //ACERCA DE
+@import "../../utilities/mixin";
+@import "../../utilities/variables";
+
+.grid-container{
+    main{
+        h1{
+            font-size: 3rem;
+        }
+
+        section{
+            .contacto{
+                form{
+                    @include flex-column;
+                    background-color:$color-transparency-light;
+                    margin-bottom: 3rem;
+                    width: 100vw;
+                    gap: 1rem;
+                    
+                    input{
+                        width: 70%;
+                        height: 35px;
+                        background-color: $color-dark;
+                        color: $font-color-light;
+                        font-size: 1rem;
+
+                        &:focus{
+                            box-shadow: 0 3px 10px $color-black;
+                            border:none;
+                        }
+                    }
+
+                    textarea{
+                        @extend input;
+                        resize: none;
+                        height: 100px;
+
+                        &::-webkit-scrollbar{
+                            width: 7px;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background: $color-dark;
+                            border-radius: 1rem;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background: $font-color-light;
+                            border-radius: 1rem;
+                        }
+                    }
+
+                    // .submit-btn{
+
+                    // }
+                }
+            }
+        }
+    }
+}
