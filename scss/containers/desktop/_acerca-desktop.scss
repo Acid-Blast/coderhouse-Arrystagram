@@ -5,18 +5,27 @@
 
 .grid-container{
     main{
+
+        .titulo-acerca{
+            h1{
+                font-size: 6rem;
+            }
+        }
+
         section{
             .contacto{
                 form{
                     input{
                         width: 50%;
                     }
+                }
+            }
+        }
 
-                    .submit-btn{
-                        &:hover{
-                            
-                        }
-                    }
+        .info-acerca{
+            .tecnologias{
+                img{
+                    width: 4rem;
                 }
             }
         }

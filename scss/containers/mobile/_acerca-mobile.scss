@@ -4,8 +4,18 @@
 
 .grid-container{
     main{
-        h1{
-            font-size: 3rem;
+        .titulo-acerca{
+            h1{
+                font-size: 3rem;
+            }
+        }
+
+        .info-acerca{
+            .tecnologias{
+                img{
+                    width: 2rem;
+                }
+            }
         }
 
         section{
