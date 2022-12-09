@@ -7,7 +7,6 @@
 main {
     .tituloHome{
         @include flex-column;
-        gap: 50%;
 
         h1{
             font-weight: bold;

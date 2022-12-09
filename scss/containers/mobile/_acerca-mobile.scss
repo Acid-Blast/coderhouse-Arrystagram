@@ -17,17 +17,30 @@
                     width: 100vw;
                     gap: 1rem;
                     
+                    img{
+                        filter: drop-shadow(0 0 7px $color-dark);
+                    }
+
                     input{
                         width: 70%;
-                        height: 35px;
+                        height: 40px;
                         background-color: $color-dark;
                         color: $font-color-light;
                         font-size: 1rem;
-
+                        transition: all .2s;
+                        
                         &:focus{
-                            box-shadow: 0 3px 10px $color-black;
-                            border:none;
+                            box-shadow: 0 5px 10px $color-black;
+                            // outline: 2px solid red;
+                            
                         }
+
+                        //para mantener estilos en autocompletado
+                        &:-webkit-autofill{
+                            -webkit-text-fill-color: $font-color-light;
+                            -webkit-box-shadow:0 0 0 50px $color-dark inset;
+                        }
+                        
                     }
 
                     textarea{
@@ -48,9 +61,29 @@
                         }
                     }
 
-                    // .submit-btn{
+                    .submit-btn{
+                        background-color: $font-color-dark;
+                        color: $color-red;
+                        box-shadow: inset 0 0 20px 10px $color-black,
+                        0 0 15px $color-black;
+                        
+                        &:hover{
+                            background-color: $color-dark;
+                            color: $font-color-light;
+                            box-shadow: inset 0 0 10px 5px $color-black,
+                                         0 0 15px $color-black;
+                        }
+                    }
+                }
+            }
 
-                    // }
+            .tecnologias{
+                @include flex-row;
+                gap: 2rem;
+                margin: 2rem;
+                img{
+                    width: 2rem;
+                    filter: drop-shadow(0 0 3px $color-dark);
                 }
             }
         }

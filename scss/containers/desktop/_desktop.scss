@@ -1,5 +1,6 @@
 /*Desktop*/
-@media screen and (min-width:1000px){
+//Esta medida hace que desktop y tablet compartan estilos, ya que se adapta bien a ambos
+@media screen and (min-width:750px){
     @import "global-desktop";
     @import "home-desktop";
     @import "personajes-desktop";

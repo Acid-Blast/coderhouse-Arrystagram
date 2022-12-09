@@ -1,1 +1,24 @@
 //ACERCA DE
+@import "../../utilities/mixin";
+@import "../../utilities/variables";
+
+
+.grid-container{
+    main{
+        section{
+            .contacto{
+                form{
+                    input{
+                        width: 50%;
+                    }
+
+                    .submit-btn{
+                        &:hover{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
