@@ -31,6 +31,10 @@
                 a{
                     img{
                         width: 4rem;
+
+                        &:hover{
+                            opacity: .8;
+                        }
                     }
                 }
             }

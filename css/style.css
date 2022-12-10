@@ -53,8 +53,8 @@
       .grid-container .navbar .navbar-collapse ul li #about-img {
         display: none; }
       .grid-container .navbar .navbar-brand img {
-        filter: drop-shadow(0 0 4px #e22);
-        width: 2.2rem; }
+        width: 2.2rem;
+        filter: drop-shadow(0 0 5px #000); }
       .grid-container .navbar .navbar-toggler {
         border: none; }
         .grid-container .navbar .navbar-toggler:focus, .grid-container .navbar .navbar-toggler:active, .grid-container .navbar .navbar-toggler .navbar-toggler-icon:focus {
@@ -385,7 +385,8 @@
       font-size: .9rem;
       transition: all .2s; }
       .grid-container main section .contacto form input:focus, .grid-container main section .contacto form textarea:focus {
-        box-shadow: 0 5px 10px #000; }
+        box-shadow: 0 5px 10px #000;
+        outline: none; }
       .grid-container main section .contacto form input:-webkit-autofill, .grid-container main section .contacto form textarea:-webkit-autofill {
         -webkit-text-fill-color: #eee;
         -webkit-box-shadow: 0 0 0 50px #1a1a1a inset; }
@@ -409,6 +410,8 @@
       .grid-container main section .contacto form textarea::-webkit-scrollbar-thumb {
         background: #eee;
         border-radius: 1rem; }
+      .grid-container main section .contacto form textarea:focus {
+        outline: none; }
     .grid-container main section .contacto form .submit-btn {
       background-image: linear-gradient(to right, #111, #1e1e1e, #e22); }
       .grid-container main section .contacto form .submit-btn:hover {
@@ -609,4 +612,6 @@
   .grid-container main .info-acerca .tecnologias {
     gap: 2rem; }
     .grid-container main .info-acerca .tecnologias a img {
-      width: 4rem; } }
+      width: 4rem; }
+      .grid-container main .info-acerca .tecnologias a img:hover {
+        opacity: .8; } }
