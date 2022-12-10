@@ -5,6 +5,7 @@
 .grid-container{
     main{
         .titulo-acerca{
+            
             h1{
                 font-size: 3rem;
             }
@@ -12,8 +13,23 @@
 
         .info-acerca{
             .tecnologias{
-                img{
-                    width: 2rem;
+                @include flex-row;
+                gap: 1rem;
+                a{
+                    img{
+                        width: 2rem;
+                    }
+                }
+            }
+
+            p{
+                a{
+                    color: $color-dark;
+                    font-style: italic;
+
+                    &:hover{
+                        font-weight: bolder;
+                    }
                 }
             }
         }
@@ -26,17 +42,16 @@
                     margin-bottom: 3rem;
                     width: 100vw;
                     gap: 1rem;
-                    
                     img{
                         filter: drop-shadow(0 0 7px $color-dark);
                     }
-
+                    
                     input{
-                        width: 70%;
+                        width: 95%;
                         height: 40px;
                         background-color: $color-dark;
                         color: $font-color-light;
-                        font-size: 1rem;
+                        font-size: .9rem;
                         transition: all .2s;
                         
                         &:focus{
@@ -53,10 +68,25 @@
                         
                     }
 
+                    button{
+                        align-self: flex-start;
+                        margin-left: 8px;
+                        background-color: transparent;
+                        border: none;
+
+                        img{
+                            width: 2rem;
+                        }
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+
                     textarea{
                         @extend input;
                         resize: none;
-                        height: 100px;
+                        height: 120px;
 
                         &::-webkit-scrollbar{
                             width: 7px;
@@ -72,16 +102,11 @@
                     }
 
                     .submit-btn{
-                        background-color: $font-color-dark;
-                        color: $color-red;
-                        box-shadow: inset 0 0 20px 10px $color-black,
-                        0 0 15px $color-black;
-                        
+                        background-image: linear-gradient(to right, #111, #1e1e1e, #e22);
                         &:hover{
-                            background-color: $color-dark;
-                            color: $font-color-light;
-                            box-shadow: inset 0 0 10px 5px $color-black,
-                                         0 0 15px $color-black;
+                            box-shadow: (inset 0 0 25px $color-black, 0 2px 10px $color-black);
+                            color: $color-red;
+                            text-shadow: 0 0 4px $color-black;
                         }
                     }
                 }

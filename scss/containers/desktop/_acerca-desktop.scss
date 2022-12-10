@@ -16,7 +16,10 @@
             .contacto{
                 form{
                     input{
-                        width: 50%;
+                        width: 40%;
+                    }
+                    button{
+                        align-self: center;
                     }
                 }
             }
@@ -24,10 +27,14 @@
 
         .info-acerca{
             .tecnologias{
-                img{
-                    width: 4rem;
+                gap: 2rem;
+                a{
+                    img{
+                        width: 4rem;
+                    }
                 }
             }
         }
+
     }
 }
