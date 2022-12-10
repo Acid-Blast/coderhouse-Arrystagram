@@ -442,7 +442,7 @@
           align-self: center; }
           .grid-container .navbar .navbar-collapse ul li #about-img img {
             filter: invert(1);
-            width: 27px;
+            width: 20px;
             opacity: .6; }
             .grid-container .navbar .navbar-collapse ul li #about-img img:hover {
               filter: invert(1) drop-shadow(0 0 3px #e22); }
@@ -553,7 +553,7 @@
     gap: 3rem; }
     .grid-container .indice__alquimia ul li {
       padding: 2rem;
-      background-color: #1112;
+      background: #1112;
       box-shadow: 0 0 10px #1119;
       width: 250px; }
       .grid-container .indice__alquimia ul li:hover {
