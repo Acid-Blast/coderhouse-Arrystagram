@@ -139,7 +139,11 @@
       z-index: 90;
       position: sticky;
       display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
       align-items: center;
+      justify-content: flex-start;
       gap: 1rem;
       top: 59px;
       background-color: #1a1a1a;
@@ -347,9 +351,6 @@
     object-position: center;
     overflow: hidden;
     height: 400px; }
-  footer .footer-bestiario {
-    position: relative;
-    margin-top: 6rem; }
   .grid-container main .titulo-acerca h1 {
     font-size: 3rem; }
   .grid-container main .info-acerca .tecnologias {
@@ -433,7 +434,8 @@
 /*Desktop*/
 @media screen and (min-width: 750px) {
   .grid-container .navbar {
-    font-size: 20px; }
+    font-size: 20px;
+    height: 50px; }
     .grid-container .navbar .navbar-collapse {
       justify-content: center; }
       .grid-container .navbar .navbar-collapse ul {
@@ -449,6 +451,8 @@
             opacity: .6; }
             .grid-container .navbar .navbar-collapse ul li #about-img img:hover {
               filter: invert(1) drop-shadow(0 0 3px #e22); }
+    .grid-container .navbar .navbar-brand img {
+      width: 2rem; }
   .grid-container div h1 {
     font-size: 9rem; }
   .grid-container .indice {
@@ -466,10 +470,13 @@
       transform: scale(1.1); }
     .grid-container .goUp img:active {
       transform: scale(1); }
-  .grid-container .banner img {
-    width: 2rem; }
-  .grid-container .banner h2 {
-    font-size: 1.9rem; }
+  .grid-container .banner {
+    top: 50px;
+    height: 50px; }
+    .grid-container .banner img {
+      width: 1.5rem; }
+    .grid-container .banner h2 {
+      font-size: 1.5rem; }
   .grid-container .info {
     padding: 3rem;
     margin-bottom: 4rem; }
@@ -502,13 +509,13 @@
         justify-content: center;
         gap: 2rem; }
         .grid-container main .indice-pj ul li a img {
-          width: 7rem;
-          transition: all .1s; }
+          width: 5rem;
+          transition: all .2s; }
           .grid-container main .indice-pj ul li a img:hover {
             filter: drop-shadow(0 0 10px #1a1a1a);
             transform: scale(1.1); }
-        .grid-container main .indice-pj ul li a .agrandar-imagen {
-          width: 8rem; }
+        .grid-container main .indice-pj ul li a #_salti {
+          width: 6rem; }
   .grid-container main .container-personajes .personaje .info-pj {
     display: grid;
     grid-column: auto;
@@ -526,7 +533,7 @@
       padding: 2rem; }
     .grid-container main .container-personajes .personaje .info-pj img {
       grid-area: img;
-      width: 70%;
+      width: 60%;
       filter: drop-shadow(0 0 5px #1a1a1a); }
   .grid-container main .container-personajes .personaje:nth-child(even) .info-pj {
     grid-template-areas: "h2 h2" "img p"; }
@@ -597,10 +604,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
-    gap: 5rem; }
+    margin-top: 2rem; }
     .carousel .carousel-inner {
-      filter: drop-shadow(0 0 15px #000);
       margin-left: 10rem;
       margin-right: 10rem; }
   .grid-container main .titulo-acerca h1 {

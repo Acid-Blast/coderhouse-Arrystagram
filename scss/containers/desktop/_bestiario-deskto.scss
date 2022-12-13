@@ -5,10 +5,9 @@
 .carousel{
     @include flex-column;
     margin-top: 2rem;
-    gap: 5rem;
+
 
     .carousel-inner{
-        filter: drop-shadow(0 0 15px #000);
         margin-left: 10rem;
         margin-right: 10rem;
     }

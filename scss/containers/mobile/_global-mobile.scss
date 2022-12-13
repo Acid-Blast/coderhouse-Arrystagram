@@ -207,8 +207,8 @@ h1, h2, h3, td, th, p{
     .banner{
         z-index: 90;
         position: sticky;
-        display: flex;
-        align-items: center;
+        @include flex-row;
+        justify-content:flex-start;
         gap: 1rem;
         top: 59px;
         background-color: $color-dark;
