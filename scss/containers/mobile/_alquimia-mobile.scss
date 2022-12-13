@@ -36,10 +36,12 @@
             
             
             h2{
+                text-align: center;
                 font-size: 1.8rem;
             }
 
             table{
+                text-align: center;
                 font-size: 1.2rem;
                 width: 100%;
                 
@@ -51,15 +53,12 @@
                     td{
                         padding: 7px;
                         text-align: center;
+
                         img{
-                            width: 20px;
+                            width: 1rem;
                             margin-left: 6px;
                             filter: drop-shadow(0 0 5px $color-dark);
                         }
-                    }
-
-                    th{
-                        @extend td;
                     }
                 }
             }

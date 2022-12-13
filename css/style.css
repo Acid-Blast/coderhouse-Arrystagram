@@ -27,7 +27,7 @@
       -ms-overflow-style: none;
       scrollbar-width: none; }
   /* arreglo de color default de Bootstrap */
-  h1, h2, h3, td, .grid-container .alquimia__container .alquimia__table table tr th, th, p {
+  h1, h2, h3, td, th, p {
     color: #111; }
   .grid-container {
     display: grid;
@@ -46,12 +46,14 @@
       font-size: .3rem;
       font-size: 1.5rem;
       background-color: #1a1a1a !important; }
-      .grid-container .navbar .navbar-collapse ul li a {
-        color: #bbb; }
-        .grid-container .navbar .navbar-collapse ul li a:hover {
-          text-shadow: 0 0 7px #e22; }
-      .grid-container .navbar .navbar-collapse ul li #about-img {
-        display: none; }
+      .grid-container .navbar .navbar-collapse ul li {
+        border-bottom: 1px solid #fff2; }
+        .grid-container .navbar .navbar-collapse ul li a {
+          color: #bbb; }
+          .grid-container .navbar .navbar-collapse ul li a:hover {
+            text-shadow: 0 0 7px #e22; }
+        .grid-container .navbar .navbar-collapse ul li #about-img {
+          display: none; }
       .grid-container .navbar .navbar-brand img {
         width: 2.2rem;
         filter: drop-shadow(0 0 5px #000); }
@@ -93,7 +95,7 @@
         color: #111;
         text-align: center; }
       .grid-container footer p::after {
-        content: "2022 - Arrystagram 1.5.2"; }
+        content: "2022 - Arrystagram 1.5.3"; }
       .grid-container footer div {
         display: flex;
         flex-wrap: wrap;
@@ -322,17 +324,19 @@
       background-color: #1112;
       text-shadow: 0 1px 3px #111d; }
       .grid-container .alquimia__container .alquimia__table h2 {
+        text-align: center;
         font-size: 1.8rem; }
       .grid-container .alquimia__container .alquimia__table table {
+        text-align: center;
         font-size: 1.2rem;
         width: 100%; }
         .grid-container .alquimia__container .alquimia__table table tr:nth-child(even) {
           background-color: #fff2; }
-        .grid-container .alquimia__container .alquimia__table table tr td, .grid-container .alquimia__container .alquimia__table table tr th {
+        .grid-container .alquimia__container .alquimia__table table tr td {
           padding: 7px;
           text-align: center; }
-          .grid-container .alquimia__container .alquimia__table table tr td img, .grid-container .alquimia__container .alquimia__table table tr th img {
-            width: 20px;
+          .grid-container .alquimia__container .alquimia__table table tr td img {
+            width: 1rem;
             margin-left: 6px;
             filter: drop-shadow(0 0 5px #1a1a1a); }
   .grid-container section .info__alquimia {

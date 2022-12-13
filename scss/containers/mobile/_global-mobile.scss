@@ -51,6 +51,7 @@ h1, h2, h3, td, th, p{
         .navbar-collapse{
             ul{
                 li{
+                    border-bottom:  1px solid $color-transparency-light;
                     a{
                         color: #bbb;
 
