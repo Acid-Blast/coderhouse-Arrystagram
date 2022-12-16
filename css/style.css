@@ -383,6 +383,7 @@
     .grid-container main section .contacto form img {
       filter: drop-shadow(0 0 7px #1a1a1a); }
     .grid-container main section .contacto form input, .grid-container main section .contacto form textarea {
+      padding: 7px;
       width: 95%;
       height: 40px;
       background-color: #1a1a1a;
@@ -403,10 +404,11 @@
       .grid-container main section .contacto form button img {
         width: 2rem; }
       .grid-container main section .contacto form button:hover {
-        transform: scale(1.1); }
+        transform: scale(0.9); }
     .grid-container main section .contacto form textarea {
       resize: none;
-      height: 120px; }
+      height: 120px;
+      padding: 7px; }
       .grid-container main section .contacto form textarea::-webkit-scrollbar {
         width: 7px; }
       .grid-container main section .contacto form textarea::-webkit-scrollbar-track {
